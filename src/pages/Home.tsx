@@ -1,8 +1,9 @@
 function Home() {
   return (
-    <div>
-      <h1>Hello World!</h1>
-      <p>This is a description.</p>
+    <div id='home-page'>
+      <section id='hero'>
+        <h1>👋 Hi, I'm Kiane Blackman</h1>
+      </section>
     </div>
   );
 }

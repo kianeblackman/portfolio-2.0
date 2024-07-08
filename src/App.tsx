@@ -1,9 +1,20 @@
+// Import statements
+import { Route, Routes } from 'react-router-dom';
+
+// Import pages
+import Home from './pages/Home.tsx';
+import NotFound from './pages/NotFound.tsx';
+
+// Import stlyes
 import './scss/styles.css';
 
 function App() {
   return (
     <div>
-      <h1>React App</h1>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='*' element={<NotFound />} />
+      </Routes>
     </div>
   );
 }

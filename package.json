@@ -1,5 +1,5 @@
 {
-  "name": "gasp-playground",
+  "name": "portfolio-2.0",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,10 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@gsap/react": "^2.1.1",
-    "gsap": "^3.12.5",
+    "@cloudinary/react": "^1.13.0",
+    "@cloudinary/url-gen": "^1.19.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-router-dom": "^6.23.1",
     "sass": "^1.77.6"
   },
   "devDependencies": {

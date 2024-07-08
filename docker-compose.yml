@@ -4,7 +4,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: gasp-playground
+    container_name: vite-react-app
     ports:
       - "5173:5173"
     volumes:

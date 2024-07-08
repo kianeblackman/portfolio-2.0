@@ -1,9 +1,8 @@
 function Home() {
   return (
-    <div id="home-page">
-      <section id="hero">
-        <h1>👋 Hi, I'm Kiane Blackman</h1>
-      </section>
+    <div>
+      <h1>Heading with font-weight 700</h1>
+      <p>Paragraph with font-weight 300</p>
     </div>
   );
 }

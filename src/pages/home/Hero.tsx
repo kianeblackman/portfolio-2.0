@@ -1,6 +1,6 @@
-import { useState, useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { useGSAP } from "@gsap/react";
+import {useState, useEffect, useRef} from "react";
+import {gsap} from "gsap";
+import {useGSAP} from "@gsap/react";
 
 gsap.registerPlugin(useGSAP);
 
@@ -25,24 +25,17 @@ function Hero() {
   const ukTime = time.toLocaleTimeString("en-GB", options);
 
   useGSAP(() => {
-    gsap.fromTo(
-      ".kiane",
-      { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, duration: 2, ease: "power4.easeInOut", delay: 1 }
-    );
+    gsap.fromTo(".kiane", {opacity: 0, y: 50}, {opacity: 1, y: 0, duration: 2, ease: "power4.easeInOut", delay: 1});
 
-    gsap.fromTo(
-      ".blackman",
-      { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, duration: 2, ease: "power4.easeInOut", delay: 0.5 }
-    ),
-      { scope: container };
+    gsap.fromTo(".blackman", {opacity: 0, y: 50}, {opacity: 1, y: 0, duration: 2, ease: "power4.easeInOut", delay: 0.5});
+
+    gsap.fromTo(".scroll", {y: 0}, {delay: 4, y: -20, duration: 0.6, ease: "power2.out", yoyo: true, repeat: -1}), {scope: container};
   });
 
   return (
-    <>
+    <section id="hero-wrapper" ref={container}>
       <h2 className="time">London, {ukTime}</h2>
-      <h1 className="home_hero heading" ref={container}>
+      <h1 className="home_hero heading">
         <span className="home_hero kiane">
           <span className="k">K</span>
           <span className="i">I</span>
@@ -61,8 +54,8 @@ function Hero() {
           <span className="n">N</span>
         </span>
       </h1>
-      <h2>Scroll down...</h2>
-    </>
+      <h2 className="home_hero scroll">Scroll down...</h2>
+    </section>
   );
 }
 

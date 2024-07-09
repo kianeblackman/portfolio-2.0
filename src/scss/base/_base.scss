@@ -1,7 +1,13 @@
 @use "../abstracts/colours.scss";
 
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "clash-grotesk", sans-serif;
+}
+
+body {
   background-color: primary-grey(900);
   color: primary-grey(200);
 }

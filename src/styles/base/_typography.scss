@@ -1,0 +1,11 @@
+:root {
+  --fs: clamp(3rem, 6vw + 1rem, 12rem);
+}
+
+body {
+  font-family: "clash-grotesk", sans-serif;
+}
+
+h1 {
+  font-size: var(--fs);
+}

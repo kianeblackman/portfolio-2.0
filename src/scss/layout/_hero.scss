@@ -1,13 +1,13 @@
-#hero.wrapper {
+#hero-wrapper {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 
   height: 100vh;
   width: 100vw;
 
   h1 {
-    font-size: 6rem;
-    @include font-weight-light;
+    font-size: 9rem;
   }
 }

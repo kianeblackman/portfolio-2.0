@@ -3,7 +3,9 @@ import Hero from "./Hero.tsx";
 function Home() {
   return (
     <div id="home" className="wrapper">
-      <Hero />
+      <section id="hero-wrapper">
+        <Hero />
+      </section>
       <h2>test</h2>
     </div>
   );

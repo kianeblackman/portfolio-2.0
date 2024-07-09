@@ -17,9 +17,12 @@ available axes:
 
 @font-face {
   font-family: "clash-grotesk";
-  src: url("../assets/fonts/clash/ClashGrotesk-Variable.woff2") format("woff2"),
-    url("../assets/fonts/clash/ClashGrotesk-Variable.woff") format("woff"),
-    url("../assets/fonts/clash/ClashGrotesk-Variable.ttf") format("truetype");
+  src: url("../assets/fonts/clash-grotesk/ClashGrotesk-Variable.woff2")
+      format("woff2"),
+    url("../assets/fonts/clash-grotesk/ClashGrotesk-Variable.woff")
+      format("woff"),
+    url("../assets/fonts/clash-grotesk/ClashGrotesk-Variable.ttf")
+      format("truetype");
   font-weight: 200 700;
   font-display: swap;
   font-style: normal;

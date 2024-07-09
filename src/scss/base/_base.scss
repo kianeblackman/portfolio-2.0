@@ -1,0 +1,7 @@
+@use "../abstracts/colours.scss";
+
+body {
+  font-family: "clash-grotesk", sans-serif;
+  background-color: primary-grey(900);
+  color: primary-grey(200);
+}

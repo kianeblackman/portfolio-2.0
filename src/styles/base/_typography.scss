@@ -1,11 +1,16 @@
-:root {
-  --fs: clamp(3rem, 6vw + 1rem, 12rem);
-}
+@use "../abstracts/colors";
+@use "../abstracts/variables";
 
 body {
   font-family: "clash-grotesk", sans-serif;
+  color: colors.primary-grey(200);
+  background-color: colors.primary-grey(800);
 }
 
 h1 {
-  font-size: var(--fs);
+  font-size: variables.$fs-xl;
+}
+
+h2 {
+  font-size: variables.$fs-sm;
 }

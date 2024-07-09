@@ -1,14 +1,17 @@
 @use "breakpoints";
 
-/*
+/**
+
 Breakpoints
+************
 
 Usage:
 
 @include breakpoint(sm) {
   // Styles
 }
-*/
+
+**/
 
 @mixin breakpoint($breakpoint) {
   @if $breakpoint == sm {
@@ -28,14 +31,4 @@ Usage:
       @content;
     }
   }
-}
-
-// Typography
-
-@mixin font-weight-light {
-  font-weight: 300;
-}
-
-@mixin font-weight-bold {
-  font-weight: 700;
 }

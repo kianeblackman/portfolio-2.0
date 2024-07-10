@@ -32,3 +32,18 @@ Usage:
     }
   }
 }
+
+/*
+
+Typography
+**********
+
+*/
+
+@mixin font-weight-light {
+  font-weight: 300;
+}
+
+@mixin font-weight-bold {
+  font-weight: 700;
+}

@@ -9,10 +9,11 @@ body {
 
 h1 {
   font-size: variables.$fs-xl;
+  font-weight: variables.$fw-bold;
   line-height: 0.9;
-  
 }
 
 h2 {
-  font-size: variables.$fs-sm;
+  font-size: variables.$fs-md;
+  font-weight: variables.$fw-semi-bold;
 }

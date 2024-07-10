@@ -6,7 +6,7 @@ gsap.registerPlugin(useGSAP);
 
 function Hero() {
   const [time, setTime] = useState(new Date());
-  const container = useRef(null);
+  const heroAnimation = useRef(null);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -24,37 +24,51 @@ function Hero() {
 
   const ukTime = time.toLocaleTimeString("en-GB", options);
 
-  useGSAP(() => {
-    gsap.fromTo(".kiane", {opacity: 0, y: 50}, {opacity: 1, y: 0, duration: 2, ease: "power4.easeInOut", delay: 1});
-
-    gsap.fromTo(".blackman", {opacity: 0, y: 50}, {opacity: 1, y: 0, duration: 2, ease: "power4.easeInOut", delay: 0.5});
-
-    gsap.fromTo(".scroll", {y: 0}, {delay: 4, y: -20, duration: 0.6, ease: "power2.out", yoyo: true, repeat: -1}), {scope: container};
-  });
+  useGSAP(
+    () => {
+      const tl = gsap.timeline({delay: 1});
+      tl.from(".hero__heading__kiane .k", {x: -50, opacity: 0, duration: 1.5, ease: "power3.out"})
+        .from(".hero__heading__kiane .i", {y: -50, opacity: 0, duration: 1, ease: "bounce.out"}, "-=1")
+        .from(".hero__heading__kiane .a", {scale: 0, duration: 1.5, ease: "elastic.out(1, 0.3)"}, "-=1.5")
+        .from(".hero__heading__kiane .n", {x: 100, opacity: 0, duration: 1, ease: "power3.out"}, "-=1")
+        .from(".hero__heading__kiane .e", {rotate: 360, opacity: 0, duration: 2, ease: "back.out(1.7)"}, "-=1.5")
+        .from(".hero__heading__blackman .b", {y: -50, opacity: 0, duration: 1, ease: "bounce.out"}, "-=1")
+        .from(".hero__heading__blackman .l", {scale: 0, duration: 1.5, ease: "elastic.out(1, 0.3)"}, "-=1.5")
+        .from(".hero__heading__blackman .a1", {x: 100, opacity: 0, duration: 1, ease: "power3.out"}, "-=1")
+        .from(".hero__heading__blackman .c", {rotate: 360, opacity: 0, duration: 2, ease: "back.out(1.7)"}, "-=1.5")
+        .from(".hero__heading__blackman .k", {scale: 0, duration: 2, ease: "elastic.out(1, 0.3)"}, "-=1.5")
+        .from(".hero__heading__blackman .m", {y: -50, opacity: 0, duration: 1, ease: "bounce.out"}, "-=1")
+        .from(".hero__heading__blackman .a2", {scale: 0, duration: 1.5, ease: "elastic.out(1, 0.3)"}, "-=1.5")
+        .from(".hero__heading__blackman .n", {x: 100, opacity: 0, duration: 1, ease: "power3.out"}, "-=1")
+        .to(".hero__heading__kiane .k", {rotateY: 360, duration: 1, ease: "none", repeat: -1, repeatDelay: 2, yoyo: true}, "+=2")
+        .to(".hero__scroll", {y: -20, duration: 0.6, ease: "power2.out", yoyo: true, repeat: -1}, "-=1");
+    },
+    {scope: heroAnimation},
+  );
 
   return (
-    <section id="hero-wrapper" ref={container}>
-      <h2 className="time">London, {ukTime}</h2>
-      <h1 className="home_hero heading">
-        <span className="home_hero kiane">
-          <span className="k">K</span>
-          <span className="i">I</span>
-          <span className="a">A</span>
-          <span className="n">N</span>
-          <span className="e">E</span>
-        </span>
-        <span className="home_hero blackman">
-          <span className="b">B</span>
-          <span className="l">L</span>
-          <span className="a">A</span>
-          <span className="c">C</span>
-          <span className="k">K</span>
-          <span className="m">M</span>
-          <span className="a">A</span>
-          <span className="n">N</span>
-        </span>
+    <section className="hero" ref={heroAnimation}>
+      <h2 className="hero__time">London, {ukTime}</h2>
+      <h1 className="hero__heading">
+        <div className="hero__heading__kiane">
+          <div className="k">K</div>
+          <div className="i">i</div>
+          <div className="a">a</div>
+          <div className="n">n</div>
+          <div className="e">e</div>
+        </div>
+        <div className="hero__heading__blackman">
+          <div className="b">B</div>
+          <div className="l">l</div>
+          <div className="a1">a</div>
+          <div className="c">c</div>
+          <div className="k">k</div>
+          <div className="m">m</div>
+          <div className="a2">a</div>
+          <div className="n">n</div>
+        </div>
       </h1>
-      <h2 className="home_hero scroll">Scroll down...</h2>
+      <h2 className="hero__scroll">Scroll down...</h2>
     </section>
   );
 }

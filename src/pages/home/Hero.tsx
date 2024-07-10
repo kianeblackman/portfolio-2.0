@@ -41,8 +41,7 @@ function Hero() {
         .from(".hero__heading__blackman .m", {y: -50, opacity: 0, duration: 1, ease: "bounce.out"}, "-=1")
         .from(".hero__heading__blackman .a2", {scale: 0, duration: 1.5, ease: "elastic.out(1, 0.3)"}, "-=1.5")
         .from(".hero__heading__blackman .n", {x: 100, opacity: 0, duration: 1, ease: "power3.out"}, "-=1")
-        .to(".hero__heading__kiane .k", {rotateY: 360, duration: 1, ease: "none", repeat: -1, repeatDelay: 2, yoyo: true}, "+=2")
-        .to(".hero__scroll", {y: -20, duration: 0.6, ease: "power2.out", yoyo: true, repeat: -1}, "-=1");
+        .to(".hero__scroll", {y: -20, duration: 0.6, ease: "power2.out", yoyo: true, repeat: -1}, "+=1.6");
     },
     {scope: heroAnimation},
   );

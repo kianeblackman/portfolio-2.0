@@ -15,3 +15,5 @@ $primary-grey: (
 @function primary-grey($key) {
   @return map-get($primary-grey, $key);
 }
+
+$accent: #ff5a5f;

@@ -1,0 +1,7 @@
+@use "../abstracts/variables" as variables;
+
+@each $key, $value in variables.$gaps {
+  .gap-#{$key} {
+    gap: $value;
+  }
+}

@@ -1,8 +1,9 @@
 import {useState, useEffect, useRef} from "react";
 import {gsap} from "gsap";
 import {useGSAP} from "@gsap/react";
+import {ScrollTrigger} from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(useGSAP);
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 function Hero() {
   const [time, setTime] = useState(new Date());
@@ -27,6 +28,9 @@ function Hero() {
   useGSAP(
     () => {
       const tl = gsap.timeline({delay: 1});
+
+      /* Hero load animation */
+
       tl.from(".hero__heading__kiane .k", {x: -50, opacity: 0, duration: 1.5, ease: "power3.out"})
         .from(".hero__heading__kiane .i", {y: -50, opacity: 0, duration: 1, ease: "bounce.out"}, "-=1")
         .from(".hero__heading__kiane .a", {scale: 0, duration: 1.5, ease: "elastic.out(1, 0.3)"}, "-=1.5")
@@ -42,6 +46,13 @@ function Hero() {
         .from(".hero__heading__blackman .a2", {scale: 0, duration: 1.5, ease: "elastic.out(1, 0.3)"}, "-=1.5")
         .from(".hero__heading__blackman .n", {x: 100, opacity: 0, duration: 1, ease: "power3.out"}, "-=1")
         .to(".hero__scroll", {y: -20, duration: 0.6, ease: "power2.out", yoyo: true, repeat: -1}, "+=1.6");
+
+      /* Scroll Triggers */
+
+      ScrollTrigger.create({trigger: ".hero__heading", pin: true, start: "center center", end: "/"});
+      gsap.to(".hero__scroll", {scrollTrigger: {trigger: ".hero__scroll", start: "top 90%", end: "top 85%", scrub: 1}, opacity: 0});
+
+      /* Animation End */
     },
     {scope: heroAnimation},
   );

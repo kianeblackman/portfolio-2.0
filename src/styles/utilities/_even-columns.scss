@@ -1,14 +1,14 @@
-@use "../abstracts/mixins" as mixins;
+@use "../abstracts/mixins";
 
 .even-columns {
   display: flex;
-  gap: 2rem;
+  align-items: start;
+
+  * {
+    flex: 1;
+  }
 
   @include mixins.breakpoint(sm) {
     flex-direction: column;
   }
-}
-
-.even-columns > * {
-  flex: 1;
 }

@@ -1,4 +1,4 @@
-@use "variables";
+@use "./variables" as variables;
 
 /**
 
@@ -15,19 +15,19 @@ Usage:
 
 @mixin breakpoint($breakpoint) {
   @if $breakpoint == sm {
-    @media (max-width: $breakpoint-sm) {
+    @media (max-width: variables.$breakpoint-sm) {
       @content;
     }
   } @else if $breakpoint == md {
-    @media (max-width: $breakpoint-md) {
+    @media (max-width: variables.$breakpoint-md) {
       @content;
     }
   } @else if $breakpoint == lg {
-    @media (max-width: $breakpoint-lg) {
+    @media (max-width: variables.$breakpoint-lg) {
       @content;
     }
   } @else if $breakpoint == xl {
-    @media (min-width: $breakpoint-xl) {
+    @media (min-width: variables.$breakpoint-xl) {
       @content;
     }
   }

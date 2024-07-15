@@ -1,10 +1,11 @@
 import Hero from "./Hero.tsx";
+import About from "./About.tsx";
 
 function Home() {
   return (
     <div id="home" className="wrapper">
       <Hero />
-      <h2>test</h2>
+      <About />
     </div>
   );
 }

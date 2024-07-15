@@ -1,0 +1,6 @@
+@use "../abstracts/colors";
+
+.about {
+  border-radius: 2rem 2rem 0 0;
+  background-color: colors.primary-grey(600);
+}

@@ -49,8 +49,9 @@ function Hero() {
 
       /* Scroll Triggers */
 
-      ScrollTrigger.create({trigger: ".hero__heading", pin: true, start: "center center", end: "/"});
+      ScrollTrigger.create({trigger: ".hero__heading", pin: true, start: "center center", end: "top top"});
       gsap.to(".hero__scroll", {scrollTrigger: {trigger: ".hero__scroll", start: "top 90%", end: "top 85%", scrub: 1}, opacity: 0});
+      gsap.to(".hero__heading__kiane", {scrollTrigger: {trigger: ".hero__heading", start: "top 50%", end: "top 40%", scrub: 1}, rotate: 0});
 
       /* Animation End */
     },

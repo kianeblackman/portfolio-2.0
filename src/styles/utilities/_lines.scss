@@ -1,0 +1,16 @@
+@use '../abstracts/colors';
+
+.line-sm {
+    border-top: 0.5px solid colors.primary-grey(100);
+    border-bottom: 0.5px solid colors.primary-grey(100);
+}
+
+.line-md {
+    border-top: 1.5px solid colors.primary-grey(100);
+    border-bottom: 1.5px solid colors.primary-grey(100);
+}
+
+.line-lg {
+    border-top: 2px solid colors.primary-grey(100);
+    border-bottom: 2px solid colors.primary-grey(100);
+}

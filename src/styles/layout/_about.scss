@@ -1,6 +1,11 @@
 @use "../abstracts/colors";
 
 .about {
-  border-radius: 2rem 2rem 0 0;
-  background-color: colors.primary-grey(600);
+  .lines {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.6rem;
+    margin-bottom: 3rem;
+  }
 }

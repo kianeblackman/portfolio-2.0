@@ -1,0 +1,7 @@
+@use '../abstracts/tokens' as *;
+
+nav {
+    min-height: 3rem;
+
+	background-color: $clr-accent-green;
+}

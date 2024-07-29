@@ -1,0 +1,9 @@
+/*
+
+This folder gathers all Sass tools and helpers used across the project that do not output any CSS when compiled on their own. These files should not contain any styles, only Sass code that is to be imported elsewhere. See _globals.scss to see how these files are imported.
+
+*/
+
+@forward "colors";
+@forward "mixins";
+@forward "tokens";

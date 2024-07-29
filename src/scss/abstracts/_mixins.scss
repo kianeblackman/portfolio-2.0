@@ -1,0 +1,34 @@
+@use './tokens' as tokens;
+
+/**
+
+Breakpoints
+************
+
+Usage:
+
+@include breakpoint(sm) {
+  // Styles
+}
+
+**/
+
+@mixin breakpoint($breakpoint) {
+    @if $breakpoint == sm {
+      @media (max-width: tokens.$breakpoint-sm) {
+        @content;
+      }
+    } @else if $breakpoint == md {
+      @media (max-width: tokens.$breakpoint-md) {
+        @content;
+      }
+    } @else if $breakpoint == lg {
+      @media (max-width: tokens.$breakpoint-lg) {
+        @content;
+      }
+    } @else if $breakpoint == xl {
+      @media (min-width: tokens.$breakpoint-xl) {
+        @content;
+      }
+    }
+  }

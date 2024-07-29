@@ -1,0 +1,8 @@
+/*
+
+This file is used to import all the other theme files. The theme files are used to style the default and dark themes of your application.
+
+*/
+
+@forward "default-theme";
+@forward "dark-theme";

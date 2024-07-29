@@ -1,7 +1,7 @@
-@use "../abstracts/tokens" as tokens;
+@use '../abstracts/tokens' as *;
 
 body {
-  font-family: tokens.$ff-primary;
-  font-size: tokens.$fs-md;
-  line-height: tokens.$lh-base;
+	font-family: $ff-primary;
+	font-size: $fs-md;
+	line-height: $lh-base;
 }

@@ -4,13 +4,10 @@
 
 <nav class="flex space-between row align-center">
 	<div class="flex row align-center">
-		<a href="/">
+		<a class="logo" href="/">
 			<img src={navbarIcon} alt="logo" />
 		</a>
-		<a href="/"> HOME </a>
+		<a href="/" class="current"> HOME </a>
 	</div>
-	<div>
-		<a href="#footer"> CONTACT </a>
-	</div>
+	<a href="#footer" class="contact"> CONTACT </a>
 </nav>
- 

@@ -1,7 +1,22 @@
 @use '../abstracts/tokens' as *;
 
 nav {
-    min-height: 3rem;
-
 	background-color: $clr-accent-green;
+	padding: 0.6rem 6rem;
+
+	:nth-child(1) {
+		gap: 1rem;
+	}
+
+	.logo img {
+		max-width: 2.6rem;
+	}
+
+    a.current {
+		font-size: $fs-lg;
+	}
+
+	a.contact {
+		font-size: $fs-xs;
+	}
 }

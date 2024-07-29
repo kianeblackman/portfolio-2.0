@@ -5,8 +5,9 @@ It imports all the other SCSS files excluding the tokens file which is imported 
 
 */
 
-@use "base";
-@use "layout";
-@use "themes";
-@use "utilities";
-@use "components";
+@use 'base';
+@use 'layout';
+@use 'themes';
+@use 'utilities';
+@use 'components';
+@use 'sections';

@@ -4,7 +4,7 @@
 	font-weight: $fw-sm;
 }
 
-.regular {
+.fw-regular {
 	font-weight: $fw-md;
 }
 
@@ -12,6 +12,14 @@
 	font-weight: $fw-lg;
 }
 
-.hero-text {
-	font-size: 8cqw;
+p {
+	font-size: 1rem;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+h1 {
+	font-size: $fs-xl;
 }

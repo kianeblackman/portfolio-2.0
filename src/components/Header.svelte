@@ -2,12 +2,13 @@
 	import { navbarIcon } from '../lib';
 </script>
 
-<nav class="header flex space-between row align-center">
-	<div class="flex row align-center">
-		<a class="logo" href="/">
+<nav class="header">
+	<div class="container">
+		<div class="header__logo">
 			<img src={navbarIcon} alt="logo" />
-		</a>
-		<a href="/" class="current"> HOME </a>
+		</div>
+		<div class="header_contact">
+			<a href="/">CONTACT</a>
+		</div>
 	</div>
-	<a href="#footer" class="contact"> CONTACT </a>
 </nav>

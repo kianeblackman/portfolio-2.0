@@ -1,7 +1,13 @@
 <script lang="ts">
-	import { heroGraphic } from '../lib';
+	import Hero from '../sections/Hero.svelte';
+	import Projects from '../sections/Projects.svelte';
+	import About from '../sections/About.svelte';
+	import Contact from '../sections/Contact.svelte';
 </script>
 
-<!-- <section class="container">
-	<h1>Welcome to SvelteKit</h1>
-</section> -->
+<div id="home">
+	<Hero />
+	<Projects />
+	<About />
+	<Contact />
+</div>

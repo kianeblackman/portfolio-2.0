@@ -2,7 +2,7 @@
 	import { navbarIcon } from '../lib';
 </script>
 
-<nav class="flex space-between row align-center">
+<nav class="header flex space-between row align-center">
 	<div class="flex row align-center">
 		<a class="logo" href="/">
 			<img src={navbarIcon} alt="logo" />

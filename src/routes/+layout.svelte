@@ -1,9 +1,9 @@
-<script>
+<script lang="ts">
 	import '../scss/styles.css';
-	import Navbar from '../components/Navbar.svelte';
+	import Header from '../components/Header.svelte';
 </script>
 
 <main>
-	<Navbar />
+	<Header />
 	<slot />
 </main>

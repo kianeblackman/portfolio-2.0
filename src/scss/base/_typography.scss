@@ -1,0 +1,17 @@
+@use '../abstracts/tokens' as *;
+
+.light {
+	font-weight: $fw-sm;
+}
+
+.regular {
+	font-weight: $fw-md;
+}
+
+.bold {
+	font-weight: $fw-lg;
+}
+
+.hero-text {
+	font-size: 8cqw;
+}

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { footerGraphic } from '../lib';
 	import Button from '../components/Button.svelte';
+	import Heading from '../components/Heading.svelte';
 
 	let links: { [key: string]: string } = {
 		about: '#about',
@@ -23,12 +24,7 @@
 </script>
 
 <section id="contact" class="contact__section">
-	<div class="contact__heading">
-		<div class="container flex align-center space-between">
-			<h2>CONTACT</h2>
-			<h3>SCROLL TO TOP</h3>
-		</div>
-	</div>
+	<Heading heading="Contact" subheading="Get in touch" />
 	<div class="contact__content">
 		<div class="contact__section container section">
 			<div class="contact__start">

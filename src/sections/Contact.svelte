@@ -44,7 +44,7 @@
 					<a href={links.github} target="_blank" rel="noopener noreferrer"> GITHUB </a>
 				</div>
 			</div>
-			<div class="end">
+			<div class="contact__end">
 				<hr />
 				<p>© 2024 by Kiane Blackman</p>
 			</div>

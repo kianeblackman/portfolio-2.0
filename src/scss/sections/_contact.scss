@@ -56,3 +56,9 @@
 	max-width: 100%;
 	height: calc(100vh - 4.2rem);
 }
+
+.contact__end {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}

@@ -29,11 +29,11 @@
 			<h3>SCROLL TO TOP</h3>
 		</div>
 	</div>
-	<div class="contact__content">
-		<div class="contact_section container">
+	<div class="contact__content container">
+		<div class="contact_section">
 			<div class="start">
 				<h3>Say hello!</h3>
-				<h1 class="fw-light">INTERESTED IN A NEW PROJECT?</h1>
+				<h1 class="fw-light">INTERESTED IN <br> A NEW PROJECT?</h1>
 				<Button text="Copy My Email" onClick={copyEmailToClipboard} />
 				<hr />
 				<div class="links">

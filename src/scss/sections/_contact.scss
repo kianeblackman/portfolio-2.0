@@ -8,11 +8,12 @@
 		flex-direction: row;
 		height: 100%;
 	}
+
 	.contact_section {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		height: 100%;
+		flex: 1 1 70%;
 
 		.links {
 			display: flex;
@@ -31,5 +32,6 @@
 }
 
 .contact__graphic img {
+	flex: 1 1 30%;
 	height: 100%;
 }

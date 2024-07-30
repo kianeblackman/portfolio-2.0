@@ -29,14 +29,16 @@
 			<h3>SCROLL TO TOP</h3>
 		</div>
 	</div>
-	<div class="contact__content container">
-		<div class="contact_section">
-			<div class="start">
-				<h3>Say hello!</h3>
-				<h1 class="fw-light">INTERESTED IN <br> A NEW PROJECT?</h1>
-				<Button text="Copy My Email" onClick={copyEmailToClipboard} />
+	<div class="contact__content">
+		<div class="contact__section container section">
+			<div class="contact__start">
+				<div class="contact__main">
+					<h3>Say hello!</h3>
+					<h1 class="fw-regular">INTERESTED IN A NEW PROJECT?</h1>
+					<Button text="Copy My Email" onClick={copyEmailToClipboard}  />
+				</div>
 				<hr />
-				<div class="links">
+				<div class="contact__links">
 					<a href={links.about} target="_blank" rel="noopener noreferrer"> ABOUT </a>
 					<a href={links.projects} target="_blank" rel="noopener noreferrer"> PROJECTS </a>
 					<a href={links.github} target="_blank" rel="noopener noreferrer"> GITHUB </a>

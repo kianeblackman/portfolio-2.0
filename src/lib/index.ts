@@ -3,5 +3,6 @@ import heroGraphic from '$lib/images/hero-graphic.svg';
 import navbarIcon from '$lib/images/navbar-icon.svg';
 import waveyUnderline from '$lib/images/wavey-underline.svg';
 import footerGraphic from '$lib/images/footer-graphic.svg';
+import test from '$lib/images/test.png';
 
-export { navbarIcon, heroGraphic, waveyUnderline, footerGraphic };
+export { navbarIcon, heroGraphic, waveyUnderline, footerGraphic, test };

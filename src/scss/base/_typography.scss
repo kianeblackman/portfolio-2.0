@@ -18,6 +18,8 @@ p {
 
 h1 {
 	font-size: $fs-xl;
+	line-height: 1;
+	text-wrap: balance;
 }
 
 h2 {

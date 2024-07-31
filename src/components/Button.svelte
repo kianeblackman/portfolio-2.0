@@ -1,9 +1,15 @@
 <script lang="ts">
-	export let url: string = '/';
-	export let text: string = 'This is a button';
+	import { onMount } from 'svelte';
+	export let text: string;
 	export let onClick: (() => void) | null = null;
+
+	onMount(() => {
+		if (!text) {
+			throw new Error('text value missing');
+		}
+	});
 </script>
 
-<a href={url} class="button" on:click|preventDefault={onClick}>
+<button class="button" on:click|preventDefault={onClick ? onClick : undefined}>
 	{text}
-</a>
+</button>

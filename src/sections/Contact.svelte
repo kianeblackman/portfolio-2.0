@@ -24,7 +24,7 @@
 </script>
 
 <section id="contact" class="contact__section">
-	<Heading heading="Contact" subheading="Get in touch" />
+	<Heading customClass="heading--dark" heading="Contact" subheading="Get in touch" />
 	<div class="contact__content">
 		<div class="contact__section container section">
 			<div class="contact__start">

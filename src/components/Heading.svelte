@@ -1,17 +1,18 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+
 	export let heading: string;
 	export let subheading: string | null = null;
 	export let customClass: string = '';
 
 	onMount(() => {
-		if (!heading) {
-			throw new Error('heading is required');
+		if (!heading || !customClass) {
+			throw new Error('fields are required');
 		}
 	});
 </script>
 
-<div class="heading {customClass}">
+<div class={`heading ${customClass ? customClass : ''}`}>
 	<div class="container flex align-center space-between">
 		<h2>{heading}</h2>
 		{#if subheading}

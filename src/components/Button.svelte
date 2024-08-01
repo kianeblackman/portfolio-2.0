@@ -5,7 +5,9 @@
 
 	onMount(() => {
 		if (!text) {
-			throw new Error('text value missing');
+			const error = new Error('text value missing');
+			console.error(error);
+			throw error;
 		}
 	});
 </script>

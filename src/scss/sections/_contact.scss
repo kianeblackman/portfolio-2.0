@@ -1,72 +1,48 @@
-@use '../abstracts/tokens' as *;
-@use '../abstracts/mixins' as *;
+@use '../abstracts/tokens' as tokens;
+@use '../abstracts/mixins' as mixins;
 
-.contact__section {
+.contact {
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
+	background-color: tokens.$clr-accent-green;
+}
 
-	.contact__links {
-		display: flex;
-		flex-direction: column;
-		gap: 1rem;
-	}
+.contact__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex: 1;
+}
 
-	.contact__links__list {
+.contact__main h1 {
+	font-size: tokens.$fs-xxl;
+	padding-bottom: 3rem;
+}
+
+.contact__footer {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+
+	.contact__footer-links {
 		display: flex;
 		flex-direction: row;
 		gap: 3rem;
 	}
 
-	.contact__links__list > * {
+	.contact__footer-links > * {
 		transition: text-decoration 0.3s;
+	}
 
-		&:hover {
-			text-decoration: underline;
+	.contact__footer-links > *:hover {
+		text-decoration: underline;
+	}
+
+	@include mixins.breakpoint(sm) {
+		.contact__footer-links {
+			flex-direction: column;
+			gap: 1rem;
 		}
 	}
-}
-
-.contact__content {
-	display: flex;
-	flex-direction: row;
-	height: 100%;
-
-	background-color: $clr-accent-green;
-}
-
-.contact__section {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	flex: 1;
-	height: calc(100vh - 4.2rem);
-}
-
-.contact__start {
-	display: flex;
-	flex-direction: column;
-	gap: 12rem;
-}
-
-.contact__main h1 {
-	font-size: $fs-xxl;
-	padding-bottom: 3rem;
-}
-
-.contact__graphic {
-	background-color: #000000;
-	height: 100%;
-}
-
-.contact__graphic img {
-	max-height: 100%;
-	max-width: 100%;
-	height: calc(100vh - 4.2rem);
-}
-
-.contact__end {
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
 }

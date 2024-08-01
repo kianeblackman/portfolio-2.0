@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { footerGraphic } from '../lib';
 	import Button from '../components/Button.svelte';
 	import Heading from '../components/Heading.svelte';
 
@@ -23,32 +22,23 @@
 	}
 </script>
 
-<section id="contact" class="contact__section">
+<section id="contact" class="contact">
 	<Heading customClass="heading--dark" heading="Contact" subheading="Get in touch" />
-	<div class="contact__content">
-		<div class="contact__section container section">
-			<div class="contact__start">
-				<div class="contact__main">
-					<h3>Say hello!</h3>
-					<h1 class="fw-regular">INTERESTED IN A NEW PROJECT?</h1>
-					<Button text="Copy My Email" onClick={copyEmailToClipboard} />
-				</div>
-				<div class="contact__links">
-					<hr />
-					<div class="contact__links__list">
-						<a href={links.about} target="_blank" rel="noopener noreferrer"> ABOUT </a>
-						<a href={links.projects} target="_blank" rel="noopener noreferrer"> PROJECTS </a>
-						<a href={links.github} target="_blank" rel="noopener noreferrer"> GITHUB </a>
-					</div>
-				</div>
-			</div>
-			<div class="contact__end">
-				<hr />
-				<p>© 2024 by Kiane Blackman</p>
-			</div>
+	<div class="contact__content container section">
+		<div class="contact__main">
+			<h3>Say hello!</h3>
+			<h1 class="fw-regular">INTERESTED IN A NEW PROJECT?</h1>
+			<Button text="Copy My Email" onClick={copyEmailToClipboard} />
 		</div>
-		<!-- <div class="contact__graphic">
-			<img src={footerGraphic} alt="contact" />
-		</div> -->
+		<div class="contact__footer">
+			<hr />
+			<div class="contact__footer-links">
+				<a href={links.about} target="_blank" rel="noopener noreferrer">ABOUT</a>
+				<a href={links.projects} target="_blank" rel="noopener noreferrer">PROJECTS</a>
+				<a href={links.github} target="_blank" rel="noopener noreferrer">GITHUB</a>
+			</div>
+			<hr />
+			<p>© 2024 by Kiane Blackman</p>
+		</div>
 	</div>
 </section>

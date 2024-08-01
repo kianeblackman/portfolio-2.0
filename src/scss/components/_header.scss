@@ -1,0 +1,24 @@
+@use '../abstracts/tokens' as *;
+
+.header {
+	width: 100%;
+	position: sticky;
+	top: 0;
+	background-color: $clr-accent-green;
+
+	.container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+	}
+
+	.header__logo {
+		padding: 0.6rem;
+	}
+
+	.header_contact {
+		position: absolute;
+		right: 0;
+	}
+}

@@ -1,0 +1,15 @@
+@use '../abstracts/tokens' as *;
+
+body {
+	font-family: $ff-primary;
+	font-size: $fs-md;
+	font-weight: $fw-sm;
+
+	width: 100vw;
+}
+
+hr {
+	border: none;
+	border-top: 1.6px solid #000000;
+	width: 100%;
+}

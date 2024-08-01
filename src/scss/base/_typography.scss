@@ -1,0 +1,37 @@
+@use '../abstracts/tokens' as *;
+
+.fw-light {
+	font-weight: $fw-sm;
+}
+
+.fw-regular {
+	font-weight: $fw-md;
+}
+
+.bold {
+	font-weight: $fw-lg;
+}
+
+p {
+	font-size: 1rem;
+}
+
+h1 {
+	font-size: $fs-xl;
+	line-height: 1;
+	text-wrap: balance;
+}
+
+h2 {
+	font-size: $fs-lg;
+	font-weight: $fw-md;
+}
+
+h3 {
+	font-size: $fs-md;
+	font-weight: $fw-md;
+}
+
+p {
+	font-size: 1rem;
+}

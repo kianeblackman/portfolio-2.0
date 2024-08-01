@@ -1,2 +1,13 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import Hero from '../sections/Hero.svelte';
+	import Projects from '../sections/Projects.svelte';
+	import About from '../sections/About.svelte';
+	import Contact from '../sections/Contact.svelte';
+</script>
+
+<div id="home">
+	<!-- <Hero /> -->
+	<!-- <Projects /> -->
+	<!-- <About /> -->
+	<Contact />
+</div>

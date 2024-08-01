@@ -1,0 +1,10 @@
+/*
+
+Base styles are the styles that are applied to the entire project. This includes things like resets, global styles, typography, and fonts. This file is used to import all the other base files.
+
+*/
+
+@forward "reset";
+@forward "fonts";
+@forward "global";
+@forward "typography";

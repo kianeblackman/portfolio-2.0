@@ -6,8 +6,8 @@
 </script>
 
 <div id="home">
-	<!-- <Hero />
+	<!-- <Hero /> -->
 	<Projects />
-	<About /> -->
-	<Contact />
+	<!-- <About /> -->
+	<!-- <Contact /> -->
 </div>

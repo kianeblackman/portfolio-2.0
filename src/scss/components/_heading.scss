@@ -1,3 +1,5 @@
+@use '../abstracts/tokens' as tokens;
+
 .heading {
 	display: flex;
 	flex-direction: row;
@@ -8,10 +10,15 @@
 
 .heading--light {
 	background-color: #ffffff;
-	color: #000000;
+	color: tokens.$clr-primary-black;
 }
 
 .heading--dark {
-	background-color: #000000;
+	background-color: tokens.$clr-primary-black;
 	color: #ffffff;
+}
+
+.heading--dark {
+	background-color: tokens.$clr-accent-orange;
+	color: tokens.$clr-primary-black;
 }

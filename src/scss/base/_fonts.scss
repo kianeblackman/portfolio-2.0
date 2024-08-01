@@ -20,10 +20,10 @@ available axes:
 @font-face {
 	font-family: 'clash-grotesk';
 	src:
-		url('src/lib/fonts/ClashGrotesk-Variable.woff2') format('woff2'),
-		url('src/lib/fonts/ClashGrotesk-Variable.woff') format('woff'),
-		url('src/lib/fonts/ClashGrotesk-Variable.ttf') format('truetype'),
-		url('src/lib/fonts/ClashGrotesk-Variable.eot') format('embedded-opentype');
+		url('/fonts/ClashGrotesk-Variable.woff2') format('woff2'),
+		url('/fonts/ClashGrotesk-Variable.woff') format('woff'),
+		url('/fonts/ClashGrotesk-Variable.ttf') format('truetype'),
+		url('/fonts/ClashGrotesk-Variable.eot') format('embedded-opentype');
 	font-weight: 200 700;
 	font-display: swap;
 	font-style: normal;

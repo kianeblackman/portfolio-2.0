@@ -4,7 +4,7 @@
 </script>
 
 <section id="projects" class="projects">
-	<Heading customClass="heading--dark" heading="Projects" />
+	<Heading customClass="heading--orange" heading="Projects" />
 	<div class="container section">
 		<ol class="projects__list">
 			<li class="projects__list-item">

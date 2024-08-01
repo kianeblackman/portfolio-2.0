@@ -7,7 +7,7 @@
 
 <div id="home">
 	<!-- <Hero /> -->
-	<Projects />
+	<!-- <Projects /> -->
 	<!-- <About /> -->
-	<!-- <Contact /> -->
+	<Contact />
 </div>

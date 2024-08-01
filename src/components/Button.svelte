@@ -2,9 +2,10 @@
 	import { onMount } from 'svelte';
 	export let text: string;
 	export let onClick: (() => void) | null = null;
+	export let customClass: string = '';
 
 	onMount(() => {
-		if (!text) {
+		if (!text || !customClass) {
 			const error = new Error('text value missing');
 			console.error(error);
 			throw error;
@@ -12,6 +13,9 @@
 	});
 </script>
 
-<button class="button" on:click|preventDefault={onClick ? onClick : undefined}>
+<button
+	class={`heading ${customClass ? customClass : ''}`}
+	on:click|preventDefault={onClick ? onClick : undefined}
+>
 	{text}
 </button>

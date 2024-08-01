@@ -1,4 +1,4 @@
-@use '../abstracts/tokens' as *;
+@use '../abstracts/tokens' as tokens;
 
 .button {
 	display: inline-block;
@@ -6,10 +6,26 @@
 	border-radius: 12rem;
 	padding: 0.6rem 1.6rem;
 	box-sizing: border-box;
-	background-color: transparent;
+	color: #ffffff;
+	background-color: tokens.$clr-primary-black;
+}
 
-	&:hover {
-		background-color: #000000;
-		color: #ffffff;
-	}
+.button:hover {
+	background-color: transparent;
+	color: tokens.$clr-primary-black;
+}
+
+.button--dark {
+	display: inline-block;
+	border: 2px solid #000000;
+	border-radius: 12rem;
+	padding: 0.6rem 1.6rem;
+	box-sizing: border-box;
+	color: #ffffff;
+	background-color: tokens.$clr-primary-black;
+}
+
+.button--dark:hover {
+	background-color: transparent;
+	color: tokens.$clr-primary-black;
 }

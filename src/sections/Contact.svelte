@@ -28,7 +28,7 @@
 		<div class="contact__main">
 			<h3>Say hello!</h3>
 			<h1 class="fw-regular">INTERESTED IN A NEW PROJECT?</h1>
-			<Button text="Copy My Email" onClick={copyEmailToClipboard} />
+			<Button customClass="button--dark" text="Copy My Email" onClick={copyEmailToClipboard} />
 		</div>
 		<div class="contact__footer">
 			<hr />

@@ -8,7 +8,7 @@
 	max-width: 120rem;
 
 	overflow: hidden;
-	background-color: bisque;
+	background-color: tokens.$clr-primary-white;
 	border-radius: clamp(0.5rem, 6vw, 12rem);
 
 	&__image {

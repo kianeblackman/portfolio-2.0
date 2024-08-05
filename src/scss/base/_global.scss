@@ -1,10 +1,10 @@
-@use '../abstracts/tokens' as *;
+@use '../abstracts/tokens' as tokens;
 
 body {
-	font-family: $ff-primary;
-	font-size: $fs-md;
-	font-weight: $fw-sm;
-
+	font-family: tokens.$ff-primary;
+	font-size: tokens.$fs-md;
+	font-weight: tokens.$fw-sm;
+	background-color: tokens.$clr-site;
 	width: 100vw;
 }
 

@@ -1,6 +1,5 @@
 .section {
-	padding-top: 3.6rem;
-	padding-bottom: 3.6rem;
+	padding: clamp(1rem, 5%, 5rem);
 
 	&--contact {
 		padding-top: 3.6rem;

@@ -1,15 +1,49 @@
+@use '../abstracts/tokens' as tokens;
+@use '../abstracts/mixins' as mixins;
+
 .about__content {
-    display: flex;
-    flex-direction: row;
-    gap: 1.6rem;
+	display: flex;
+	flex-direction: row;
+	gap: 1.6rem;
 }
 
 .about__main {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 	gap: 1.6rem;
 }
 
 .about__aditional {
 	gap: 1.6rem;
+}
+
+@include mixins.breakpoint(sm) {
+	.about__content {
+		flex-direction: column;
+	}
+}
+
+.tech-stack__list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.tech-stack__sticker {
+	font-size: 1rem;
+	background-color: transparent;
+	padding: 0.4rem 1rem;
+	border: 1px solid black;
+	border-radius: 12rem;
+}
+
+@include mixins.breakpoint(sm) {
+	.tech-stack__list {
+		gap: 0.6rem;
+	}
+}
+
+.tech-stack__heading {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }

@@ -1,0 +1,23 @@
+{
+	"hardStack": [
+		"HTML",
+		"CSS",
+		"JavaScript",
+		"TypeScript",
+		"React",
+		"SASS",
+		"Node.js",
+		"Vite",
+		"Tailwind CSS",
+		"Git",
+		"Figma",
+		"Photoshop",
+		"Illustrator",
+		"InDesign",
+		"Premiere Pro",
+		"After Effects",
+		"Lightroom"
+	],
+	"softStack": ["Tailwind", "GSAP", "Three.js"],
+	"learningStack": ["Sveltekit", "Docker"]
+}

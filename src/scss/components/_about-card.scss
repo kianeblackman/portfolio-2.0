@@ -7,17 +7,18 @@
 	&--position {
 		display: flex;
 		flex-wrap: wrap;
-		background-color: tokens.$clr-accent-orange;
+		background-color: #d1d1d1;
 	}
 
 	&--contact {
 		background-color: transparent;
-        border: 2px solid tokens.$clr-primary-black;
-        border-radius: 1rem;
+		border: 2px solid #d1d1d1;
+		border-radius: 1rem;
 	}
 
 	.about__card__item {
 		&:not(:last-child) {
+			white-space: nowrap;
 			margin-bottom: 0.6rem;
 			margin-right: 1.6rem;
 		}

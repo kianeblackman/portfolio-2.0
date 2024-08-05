@@ -1,5 +1,18 @@
 <script lang="ts">
 	import Heading from '../components/Heading.svelte';
+
+	import { onMount } from 'svelte';
+	let hardStack: string[] = [];
+	let softStack: string[] = [];
+	let learningStack: string[] = [];
+
+	onMount(async () => {
+		const response = await fetch('/data/tech-stack.json');
+		const data = await response.json();
+		hardStack = data.hardStack;
+		softStack = data.softStack;
+		learningStack = data.learningStack;
+	});
 </script>
 
 <section id="about" class="about">
@@ -33,11 +46,7 @@
 				<div class="about__card about__card--contact">
 					<div class="about__card__item">
 						<h6>Email</h6>
-						<p class="p-email">
-							<a class="text-decoration-none email-address" href="mailto:hello@gimaev.com">
-								hello@gimaev.com
-							</a>
-						</p>
+						<p>hello@gimaev.com</p>
 					</div>
 					<div class="about__card__item">
 						<h6>LOCATION</h6>
@@ -47,11 +56,30 @@
 			</div>
 		</div>
 		<div class="about__tech-stack">
-			<p>
-				I'm a web developer based in Toronto, Canada. I specialize in building websites and web
-				applications using modern technologies like React, Svelte, and Node.js. I'm passionate about
-				creating beautiful, user-friendly interfaces and writing clean, maintainable code.
-			</p>
+			<div class="tech-stack__category">
+				<h3 class="tech-stack__heading">Hard Stack</h3>
+				<ul class="tech-stack__list">
+					{#each hardStack as tech}
+						<li class="tech-stack__sticker">{tech}</li>
+					{/each}
+				</ul>
+			</div>
+			<div class="tech-stack__category">
+				<h3 class="tech-stack__heading">Soft Stack</h3>
+				<ul class="tech-stack__list">
+					{#each softStack as tech}
+						<li class="tech-stack__sticker">{tech}</li>
+					{/each}
+				</ul>
+			</div>
+			<div class="tech-stack__category">
+				<h3 class="tech-stack__heading">Learning Stack</h3>
+				<ul class="tech-stack__list">
+					{#each learningStack as tech}
+						<li class="tech-stack__sticker">{tech}</li>
+					{/each}
+				</ul>
+			</div>
 		</div>
 	</div>
 </section>

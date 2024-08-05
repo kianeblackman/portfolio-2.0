@@ -44,9 +44,8 @@
 			<p class="project-card__description">{projectDescription}</p>
 		</div>
 		<div class="project-card__links">
-			<a href={projectLink}>View Site</a>
-			<a href={projectGithub}>View Code</a>
+			<a href={projectLink} class="button">View Site</a>
+			<a href={projectGithub} class="button">View Code</a>
 		</div>
 	</div>
 </div>
- 

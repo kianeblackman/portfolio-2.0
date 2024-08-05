@@ -12,7 +12,7 @@
 					projectTitle="Project 1"
 					projectDescription="This is a description of project 1"
 					projectLink="/"
-					projectImage="/"
+					projectImage="/images/image.svg"
 					projectImageAlt="Project 1"
 					projectGithub="/"
 				/>

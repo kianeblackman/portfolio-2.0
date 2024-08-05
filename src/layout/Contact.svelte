@@ -23,7 +23,7 @@
 </script>
 
 <section id="contact" class="contact">
-	<Heading customClass="heading--dark" heading="Contact" subheading="Get in touch" />
+	<Heading customClass="heading--dark" heading="Contact" subheading="Back to top" />
 	<div class="contact__content container section">
 		<div class="contact__main">
 			<h3>Say hello!</h3>

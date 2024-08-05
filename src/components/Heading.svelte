@@ -16,7 +16,7 @@
 	<div class="container flex align-center space-between">
 		<h2>{heading}</h2>
 		{#if subheading}
-			<h3>{subheading}</h3>
+			<h3>{subheading.toUpperCase()}</h3>
 		{/if}
 	</div>
 </div>

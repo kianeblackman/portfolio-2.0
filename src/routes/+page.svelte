@@ -1,8 +1,8 @@
 <script lang="ts">
-	import Hero from '../sections/Hero.svelte';
-	import Projects from '../sections/Projects.svelte';
-	import About from '../sections/About.svelte';
-	import Contact from '../sections/Contact.svelte';
+	import Hero from '../layout/Hero.svelte';
+	import Projects from '../layout/Projects.svelte';
+	// import About from '../layout/About.svelte';
+	import Contact from '../layout/Contact.svelte';
 </script>
 
 <div id="home">

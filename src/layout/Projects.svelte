@@ -29,7 +29,7 @@
 </script>
 
 <section id="projects" class="projects">
-	<Heading customClass="heading--orange" heading="Projects" />
+	<Heading customClass="heading--purple" heading="Projects" />
 	<div class="container section">
 		<ol class="projects__list">
 			{#each projects as project}

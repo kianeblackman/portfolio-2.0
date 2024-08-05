@@ -1,9 +1,11 @@
 <script lang="ts">
 	import { waveyUnderline, heroGraphic } from '../lib';
+	import Heading from '../components/Heading.svelte';
 </script>
 
 <section id="hero" class="hero">
-	<div class="container">
+	<Heading customClass="heading--green" heading="Home" subheading="Contact" />
+	<div class="container section">
 		<h1 class="fw-regular hero-text">
 			<div class="bold">Kiane Blackman</div>
 			🡢 a curious and creative

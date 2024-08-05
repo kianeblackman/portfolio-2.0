@@ -1,0 +1,15 @@
+.about__content {
+    display: flex;
+    flex-direction: row;
+    gap: 1.6rem;
+}
+
+.about__main {
+    display: flex;
+    flex-direction: column;
+	gap: 1.6rem;
+}
+
+.about__aditional {
+	gap: 1.6rem;
+}

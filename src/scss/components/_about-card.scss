@@ -1,0 +1,25 @@
+@use '../abstracts/tokens' as tokens;
+
+.about__card {
+	padding: 1.6rem;
+	border-radius: 0.8rem;
+
+	&--position {
+		display: flex;
+		flex-wrap: wrap;
+		background-color: tokens.$clr-accent-orange;
+	}
+
+	&--contact {
+		background-color: transparent;
+        border: 2px solid tokens.$clr-primary-black;
+        border-radius: 1rem;
+	}
+
+	.about__card__item {
+		&:not(:last-child) {
+			margin-bottom: 0.6rem;
+			margin-right: 1.6rem;
+		}
+	}
+}

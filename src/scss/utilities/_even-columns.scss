@@ -8,7 +8,7 @@
 		flex: 1;
 	}
 
-	@include mixins.breakpoint(sm) {
+	@include mixins.breakpoint(md) {
 		flex-direction: column;
 	}
 }

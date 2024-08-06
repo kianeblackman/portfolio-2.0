@@ -1,49 +1,78 @@
 @use '../abstracts/tokens' as tokens;
 @use '../abstracts/mixins' as mixins;
 
-.about__content {
-	display: flex;
-	flex-direction: row;
-	gap: 1.6rem;
-}
+.about {
+	&__content {
+		display: flex;
+		flex-direction: row;
+		gap: 1.6rem;
 
-.about__main {
-	display: flex;
-	flex-direction: column;
-	gap: 1.6rem;
-}
+		@include mixins.breakpoint(md) {
+			flex-direction: column;
+		}
+	}
 
-.about__aditional {
-	gap: 1.6rem;
-}
-
-@include mixins.breakpoint(sm) {
-	.about__content {
+	&__main {
+		display: flex;
 		flex-direction: column;
+		gap: 1.6rem;
 	}
-}
 
-.tech-stack__list {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 1rem;
-}
+	&__additional {
+		display: flex;
+		flex-direction: row;
+		gap: 1.6rem;
 
-.tech-stack__sticker {
-	font-size: 1rem;
-	background-color: transparent;
-	padding: 0.4rem 1rem;
-	border: 1px solid black;
-	border-radius: 12rem;
-}
-
-@include mixins.breakpoint(sm) {
-	.tech-stack__list {
-		gap: 0.6rem;
+		@include mixins.breakpoint(md) {
+			flex-direction: column;
+		}
 	}
-}
 
-.tech-stack__heading {
-	margin-top: 1rem;
-	margin-bottom: 1rem;
+	&__card {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 1.6rem;
+		padding: 1.6rem;
+		border-radius: 0.8rem;
+
+		&--position {
+			background-color: #d1d1d1;
+		}
+
+		&--contact {
+			background-color: transparent;
+			border: 2px solid #d1d1d1;
+		}
+	}
+
+	&__techstack {
+		display: flex;
+		flex-direction: column;
+		gap: 1.6rem;
+
+		&-category {
+			display: flex;
+			flex-direction: column;
+			gap: 0.6rem;
+		}
+
+		&-list {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 1rem;
+
+			@include mixins.breakpoint(sm) {
+				gap: 0.6rem;
+			}
+		}
+
+		&-sticker {
+			font-size: 1rem;
+			background-color: transparent;
+			padding: 0.4rem 1rem;
+			border: 1px solid black;
+			border-radius: 12rem;
+		}
+	}
 }

@@ -76,17 +76,6 @@
 				</ul>
 			</div>
 			<div class="about__techstack-category">
-				<h3 class="about__techstack-heading">Soft Stack</h3>
-				<ul class="about__techstack-list">
-					{#each softStack as tech}
-						<li class="about__techstack-sticker">
-							<Icon icon={tech.icon} style="color: black;" />
-							{tech.name}
-						</li>
-					{/each}
-				</ul>
-			</div>
-			<div class="about__techstack-category">
 				<h3 class="about__techstack-heading">Learning Stack</h3>
 				<ul class="about__techstack-list">
 					{#each learningStack as tech}

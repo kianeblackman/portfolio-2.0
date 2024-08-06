@@ -16,7 +16,6 @@
 		{ "name": "InDesign", "icon": "cib:adobe-indesign" },
 		{ "name": "Lightroom", "icon": "cib:adobe-lightroom" }
 	],
-	"softStack": [{ "name": "Next.js", "icon": "ri:nextjs-fill" }],
 	"learningStack": [
 		{ "name": "GSAP", "icon": "simple-icons:greensock" },
 		{ "name": "Sveltekit", "icon": "ri:svelte-fill" },

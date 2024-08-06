@@ -68,9 +68,14 @@
 		}
 
 		&-sticker {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: row;
+			gap: 0.4rem;
 			font-size: 1rem;
 			background-color: transparent;
-			padding: 0.4rem 1rem;
+			padding: 0.4rem 0.6rem;
 			border: 1px solid black;
 			border-radius: 12rem;
 		}

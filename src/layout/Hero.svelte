@@ -5,19 +5,19 @@
 <section id="hero" class="hero">
 	<Heading customClass="heading--green" heading="Home" subheading="Contact" />
 	<div class="hero__content container--section">
-		<h1 class="hero__content-heading fw-regular">
+		<h1 class="hero__heading fw-regular">
 			<div class="bold">Kiane Blackman</div>
 			🡢 a curious and creative
-			<div class="underline-wrapper">
+			<div class="hero__underline-wrapper">
 				web developer
-				<div class="underline" style="--underline-url: url('/images/wavey-underline.svg');"></div>
+				<div class="hero__underline" style="--underline-url: url('/images/wavey-underline.svg');"></div>
 			</div>
 			with an eye for design!
-			<div class="hero__content-heading--sticker">
+			<div class="hero__sticker">
 				<h3 class="fw-regular">PORTFOLIO 2024</h3>
 			</div>
 		</h1>
-		<div class="hero__content-image">
+		<div class="hero__image">
 			<img src="/images/image.svg" alt="Hero Graphic" />
 		</div>
 	</div>

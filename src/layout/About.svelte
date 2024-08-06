@@ -19,8 +19,9 @@
 	<Heading customClass="heading--orange" heading="About" />
 	<div class="about__content container section even-columns">
 		<div class="about__main">
+			<h1>Hello there!</h1>
 			<h2 class="about__introduction fw-regular">
-				Hello there! My name is Kiane Blackman. I'm a creative web developer based in the South of
+				My name is Kiane Blackman. I'm a creative web developer based in the South of
 				England with an eye for design! Aside from creating digital stuff I like gardening, cooking,
 				swimming and many more outdoor activities.
 			</h2>

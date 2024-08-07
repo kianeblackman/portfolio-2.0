@@ -22,7 +22,8 @@
 						scrollTo: {
 							y: targetSection,
 							offsetY: -1
-						}
+						},
+						ease: 'power4.inOut'
 					});
 				}
 			};
@@ -33,23 +34,14 @@
 </script>
 
 <section id="hero" class="hero">
-	<Heading
-		customClass="heading--green"
-		event={scrollToSection}
-		heading="Home"
-		subheading="Contact"
-		url="#contact"
-	/>
+	<Heading customClass="heading--green" event={scrollToSection} heading="Home" anchorHeading="Contact" url="#contact" />
 	<div class="hero__content container--section">
 		<h1 class="hero__heading fw-regular">
 			<div class="bold">Kiane Blackman</div>
 			🡢 a curious and creative
 			<div class="hero__underline-wrapper">
 				web developer
-				<div
-					class="hero__underline"
-					style="--underline-url: url('/images/wavey-underline.svg');"
-				></div>
+				<div class="hero__underline" style="--underline-url: url('/images/wavey-underline.svg');"></div>
 			</div>
 			with an eye for design!
 			<div class="hero__sticker">

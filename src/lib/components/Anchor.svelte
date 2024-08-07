@@ -1,7 +1,7 @@
 <script lang="ts">
-	export let text: string;
+	export let anchorHeading: string;
 	export let url: string;
 	export let event: (event: Event) => void;
 </script>
 
-<a class="button" href={url} on:click={event}>{text}</a>
+<a href={url} on:click={event}>{anchorHeading}</a>

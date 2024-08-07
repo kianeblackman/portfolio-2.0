@@ -1,8 +1,9 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { Anchor } from '$lib';
 
 	export let heading: string;
-	export let subheading: string | null = null;
+	export let anchorHeading: string | null = null;
 	export let customClass: string = '';
 	export let url: string = '';
 	export let event: (event: Event) => void;
@@ -14,7 +15,7 @@
 		if (!customClass) {
 			throw new Error('Custom class is required.');
 		}
-		if (subheading && !url) {
+		if (anchorHeading && !url) {
 			throw new Error('URL is required when subheading is provided.');
 		}
 	});
@@ -23,9 +24,9 @@
 <div class={`heading ${customClass}`}>
 	<div class="container flex align-center space-between">
 		<h2>{heading}</h2>
-		{#if subheading}
+		{#if anchorHeading}
 			<h3>
-				<a href={url} on:click={event}>{subheading}</a>
+				<Anchor {anchorHeading} {url} {event} />
 			</h3>
 		{/if}
 	</div>

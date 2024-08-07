@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Button from '../components/Button.svelte';
-	import Heading from '../components/Heading.svelte';
+	import Heading from '../lib/components/Heading.svelte';
 
 	let links: { [key: string]: string } = {
 		about: '#about',

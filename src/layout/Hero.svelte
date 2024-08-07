@@ -1,9 +1,45 @@
 <script lang="ts">
-	import Heading from '../components/Heading.svelte';
+	import { Heading } from '$lib';
+	import { onMount } from 'svelte';
+	import { gsap } from 'gsap';
+
+	let scrollToSection: (event: Event) => void;
+
+	onMount(async () => {
+		try {
+			const { ScrollToPlugin } = await import('gsap/ScrollToPlugin');
+			gsap.registerPlugin(ScrollToPlugin);
+
+			scrollToSection = (event: Event) => {
+				event.preventDefault();
+
+				const targetId = (event.target as HTMLAnchorElement).getAttribute('href') || '';
+				const targetSection = document.querySelector(targetId);
+
+				if (targetSection) {
+					gsap.to(window, {
+						duration: 2,
+						scrollTo: {
+							y: targetSection,
+							offsetY: -1
+						}
+					});
+				}
+			};
+		} catch (error) {
+			console.error('Error loading GSAP ScrollToPlugin:', error);
+		}
+	});
 </script>
 
 <section id="hero" class="hero">
-	<Heading customClass="heading--green" heading="Home" subheading="Contact" url="#contact" />
+	<Heading
+		customClass="heading--green"
+		event={scrollToSection}
+		heading="Home"
+		subheading="Contact"
+		url="#contact"
+	/>
 	<div class="hero__content container--section">
 		<h1 class="hero__heading fw-regular">
 			<div class="bold">Kiane Blackman</div>

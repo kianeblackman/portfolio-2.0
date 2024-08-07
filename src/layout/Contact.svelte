@@ -1,7 +1,5 @@
 <script lang="ts">
-	import Button from '../components/Button.svelte';
-	import Heading from '../lib/components/Heading.svelte';
-	import { Anchor } from '$lib';
+	import { Anchor, Button, Heading } from '$lib';
 
 	import { onMount } from 'svelte';
 	import { gsap } from 'gsap';
@@ -26,7 +24,6 @@
 	}
 
 	let scrollToSection: (event: Event) => void;
-	// export let event: (event: Event) => void;
 
 	onMount(async () => {
 		try {

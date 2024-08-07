@@ -1,5 +1,9 @@
-// place files you want to import through the `$lib` alias in this folder.
-import Heading from './components/Heading.svelte';
+/*
+COMPONENTS
+*/
 import Anchor from './components/Anchor.svelte';
+import Button from './components/Button.svelte';
+import Heading from './components/Heading.svelte';
+import ProjectCard from './components/ProjectCard.svelte';
 
-export { Heading, Anchor };
+export { Anchor, Button, Heading, ProjectCard };

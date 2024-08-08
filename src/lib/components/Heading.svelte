@@ -26,7 +26,7 @@
 		<h2>{heading}</h2>
 		{#if anchorHeading}
 			<h3>
-				<Anchor {anchorHeading} {url} {event} />
+				<Anchor {anchorHeading} {url} />
 			</h3>
 		{/if}
 	</div>

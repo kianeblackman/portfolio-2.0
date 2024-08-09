@@ -60,6 +60,11 @@ ul {
 	padding: 0;
 }
 
+button,
+a {
+	cursor: pointer;
+}
+
 #root,
 #__next {
 	isolation: isolate;

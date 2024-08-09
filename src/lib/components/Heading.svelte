@@ -6,7 +6,6 @@
 	export let anchorHeading: string | null = null;
 	export let customClass: string = '';
 	export let url: string = '';
-	export let event: (event: Event) => void;
 
 	onMount(() => {
 		if (!heading) {

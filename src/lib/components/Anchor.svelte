@@ -1,9 +1,10 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { gsap } from 'gsap';
+
 	export let anchorHeading: string;
 	export let url: string;
-	export let scrollToSection: (event: Event) => void;
+	let scrollToSection: (event: Event) => void;
 
 	onMount(async () => {
 		try {

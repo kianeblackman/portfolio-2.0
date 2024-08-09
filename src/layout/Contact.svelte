@@ -1,10 +1,9 @@
 <script lang="ts">
 	import { Anchor, Heading } from '$lib';
 	import { onMount } from 'svelte';
-	import tippy from 'tippy.js';
+	import tippy, { followCursor } from 'tippy.js';
 	import 'tippy.js/dist/tippy.css';
-	import 'tippy.js/themes/translucent.css';
-	import 'tippy.js/animations/scale.css';
+	import 'tippy.js/themes/light.css';
 
 	let links: { [key: string]: string } = {
 		about: '#about',
@@ -25,12 +24,21 @@
 	}
 
 	onMount(() => {
-		tippy('.button--dark', {
-			content: 'Click to copy my email to your clipboard!',
-			placement: 'top',
+		tippy('#copyButton', {
+			content: '<h2>Woo-hoo!!!</h2>',
+			allowHTML: true,
+			arrow: false,
+			followCursor: true,
+			plugins: [followCursor],
 			trigger: 'click',
-			theme: 'translucent',
+			theme: 'dark',
 			animation: 'scale',
+
+			onShow(instance) {
+				setTimeout(() => {
+					instance.hide();
+				}, 2000);
+			}
 		});
 	});
 </script>
@@ -41,7 +49,7 @@
 		<div class="contact__main">
 			<h2 class="fw-light">Say hello!</h2>
 			<h1 class="fw-regular">INTERESTED IN A NEW PROJECT?</h1>
-			<button class="button--dark" on:click={copyEmailToClipboard}>Copy My Email</button>
+			<button id="copyButton" class="button--dark" on:click={copyEmailToClipboard}>Copy My Email</button>
 		</div>
 		<div class="contact__footer">
 			<hr />

@@ -3,32 +3,24 @@
 		"projectTitle": "Roam Folk",
 		"projectDescription": "A collaborative anthology magazine, exploring the modern ways that people are engaging with the past.",
 		"projectLink": "https://roamfolk.com/",
-		"projectImage": "/images/image.svg",
+		"projectImage": "/images/roam-cover.jpg",
 		"projectImageAlt": "Roam Folk Cover",
 		"projectGithub": "https://github.com/kianeblackman/ROAM_website"
 	},
 	{
-		"projectTitle": "Roam Folk",
-		"projectDescription": "A collaborative anthology magazine, exploring the modern ways that people are engaging with the past.",
-		"projectLink": "https://roamfolk.com/",
-		"projectImage": "/images/image.svg",
-		"projectImageAlt": "Roam Folk Cover",
-		"projectGithub": "https://github.com/kianeblackman/ROAM_website"
+		"projectTitle": "Pizza Shark",
+		"projectDescription": "A fantasy pizzaria website where the only thing sharper than our teeth is our taste in pizza!",
+		"projectLink": "https://pizza-shark.netlify.app/",
+		"projectImage": "/images/pizzashark-cover.jpg",
+		"projectImageAlt": "Pizza Shark Cover",
+		"projectGithub": "https://github.com/kianeblackman/pizza-shark"
 	},
 	{
-		"projectTitle": "Roam Folk",
+		"projectTitle": "Portfolio 2.0",
 		"projectDescription": "A collaborative anthology magazine, exploring the modern ways that people are engaging with the past.",
-		"projectLink": "https://roamfolk.com/",
+		"projectLink": "/",
 		"projectImage": "/images/image.svg",
-		"projectImageAlt": "Roam Folk Cover",
-		"projectGithub": "https://github.com/kianeblackman/ROAM_website"
-	},
-	{
-		"projectTitle": "Roam Folk",
-		"projectDescription": "A collaborative anthology magazine, exploring the modern ways that people are engaging with the past.",
-		"projectLink": "https://roamfolk.com/",
-		"projectImage": "/images/image.svg",
-		"projectImageAlt": "Roam Folk Cover",
-		"projectGithub": "https://github.com/kianeblackman/ROAM_website"
+		"projectImageAlt": "Portfolio Cover",
+		"projectGithub": "https://github.com/kianeblackman/portfolio-2.0"
 	}
 ]

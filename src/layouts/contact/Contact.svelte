@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { Anchor, Heading, copyToClipboard } from '$lib';
-
 	import { onMount } from 'svelte';
 	import tippy, { followCursor } from 'tippy.js';
 	import 'tippy.js/dist/tippy.css';
@@ -16,7 +15,6 @@
 			trigger: 'click',
 			theme: 'dark',
 			animation: 'scale',
-
 			onShow(instance) {
 				setTimeout(() => {
 					instance.hide();

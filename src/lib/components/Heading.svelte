@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { Anchor } from '$lib';
+	import { Anchor, HomeSticker } from '$lib';
 
 	export let heading: string;
 	export let anchorHeading: string | null = null;

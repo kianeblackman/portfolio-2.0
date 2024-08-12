@@ -1,0 +1,15 @@
+.home-sticker {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	z-index: 2000;
+	min-height: 4.2rem;
+	width: 100%;
+	pointer-events: none;
+
+	img {
+		width: clamp(1.6rem, 10vw, 3rem);
+		height: auto;
+	}
+}

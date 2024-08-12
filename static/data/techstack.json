@@ -5,11 +5,16 @@
 		{ "name": "JavaScript", "icon": "akar-icons:javascript-fill" },
 		{ "name": "TypeScript", "icon": "akar-icons:typescript-fill" },
 		{ "name": "React", "icon": "akar-icons:react-fill" },
+		{ "name": "Sveltekit", "icon": "ri:svelte-fill" },
+		{ "name": "Next.js", "icon": "akar-icons:nextjs-fill" },
+		{ "name": "Tailwind CSS", "icon": "mdi:tailwind" },
 		{ "name": "SASS", "icon": "akar-icons:sass-fill" },
 		{ "name": "Node.js", "icon": "akar-icons:node-fill" },
-		{ "name": "Vite", "icon": "file-icons:vite" },
-		{ "name": "Tailwind CSS", "icon": "mdi:tailwind" },
+		{ "name": "PHP", "icon": "akar-icons:php-fill" },
+		{ "name": "Wordpress", "icon": "ic:baseline-wordpress" },
+		{ "name": "Elementor", "icon": "simple-icons:elementor" },
 		{ "name": "Git", "icon": "akar-icons:github-fill" },
+		{ "name": "Vite", "icon": "file-icons:vite" },
 		{ "name": "Figma", "icon": "akar-icons:figma-fill" },
 		{ "name": "Photoshop", "icon": "cib:adobe-photoshop" },
 		{ "name": "Illustrator", "icon": "cib:adobe-illustrator" },
@@ -17,8 +22,10 @@
 		{ "name": "Lightroom", "icon": "cib:adobe-lightroom" }
 	],
 	"learningStack": [
+		{ "name": "Vue", "icon": "mdi:vuejs" },
 		{ "name": "GSAP", "icon": "simple-icons:greensock" },
-		{ "name": "Sveltekit", "icon": "ri:svelte-fill" },
-		{ "name": "Docker", "icon": "mdi:docker" }
+		{ "name": "Docker", "icon": "mdi:docker" },
+		{ "name": "Linux", "icon": "uil:linux" },
+		{ "name": "Vitest", "icon": "file-icons:vite" }
 	]
 }

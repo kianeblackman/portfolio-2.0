@@ -34,7 +34,7 @@
 	</div>
 	<div class="project-card__content">
 		<div class="project-card__details">
-			<h1 class="project-card__title">{projectTitle}</h1>
+			<h2 class="project-card__title bold">{projectTitle}</h2>
 			<h4 class="project-card__description">{projectDescription}</h4>
 		</div>
 		<div class="project-card__links">

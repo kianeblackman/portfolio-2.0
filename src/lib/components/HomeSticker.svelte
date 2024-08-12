@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { gsap } from 'gsap';
+	// import {navbarIcon} from '$lib/utils';
 
 	onMount(async () => {
 		try {

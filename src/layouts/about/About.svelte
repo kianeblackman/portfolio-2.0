@@ -20,7 +20,7 @@
 </script>
 
 <section id="about" class="about">
-	<Heading customClass="heading--orange" heading="About" />
+	<Heading customClass="heading--purple" heading="About" />
 	<div class="about__content container--section even-columns">
 		<div class="about__main">
 			<h1>Hello there!</h1>

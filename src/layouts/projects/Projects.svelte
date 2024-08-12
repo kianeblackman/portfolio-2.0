@@ -29,7 +29,7 @@
 
 <section id="projects" class="projects">
 	<Heading customClass="heading--purple" heading="Projects" />
-	<div class="container section">
+	<div class="container--section">
 		<ol class="projects__list">
 			{#each projects as project}
 				<li class="projects__list-item">

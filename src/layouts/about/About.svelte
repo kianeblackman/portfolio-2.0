@@ -21,7 +21,7 @@
 
 <section id="about" class="about">
 	<Heading customClass="heading--orange" heading="About" />
-	<div class="about__content container section even-columns">
+	<div class="about__content container--section even-columns">
 		<div class="about__main">
 			<h1>Hello there!</h1>
 			<h2 class="about__introduction fw-regular">

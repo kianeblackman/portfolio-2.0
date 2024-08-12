@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Anchor, Heading, copyToClipboard } from '$lib';
-	
+
 	import { onMount } from 'svelte';
 	import tippy, { followCursor } from 'tippy.js';
 	import 'tippy.js/dist/tippy.css';
@@ -39,7 +39,7 @@
 			<div class="contact__footer-links">
 				<Anchor anchorHeading="About" url="#about" />
 				<Anchor anchorHeading="Projects" url="#projects" />
-				<a href="https://github.com/kianeblackman" target="_blank" rel="noopener noreferrer">GITHUB</a>
+				<a href="https://github.com/kianeblackman" target="_blank" rel="noopener noreferrer">Github</a>
 			</div>
 			<hr />
 			<p>© 2024 by Kiane Blackman</p>

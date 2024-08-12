@@ -2,7 +2,6 @@
 @use '../abstracts/mixins' as mixins;
 
 .about {
-	height: 100vh;
 	&__content {
 		display: flex;
 		flex-direction: row;

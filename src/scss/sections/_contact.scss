@@ -6,43 +6,43 @@
 	flex-direction: column;
 	height: 100vh;
 	background-color: tokens.$clr-accent-green;
-}
 
-.contact__content {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	flex: 1;
-}
-
-.contact__main h1 {
-	font-size: tokens.$fs-xxl;
-	padding-bottom: 3rem;
-}
-
-.contact__footer {
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-
-	.contact__footer-links {
+	&__content {
 		display: flex;
-		flex-direction: row;
-		gap: 3rem;
+		flex-direction: column;
+		justify-content: space-between;
+		flex: 1;
 	}
 
-	.contact__footer-links > * {
-		transition: text-decoration 0.3s;
+	&__main h1 {
+		font-size: tokens.$fs-xxl;
+		padding-bottom: 3rem;
 	}
 
-	.contact__footer-links > *:hover {
-		text-decoration: underline;
-	}
+	&__footer {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
 
-	@include mixins.breakpoint(sm) {
-		.contact__footer-links {
-			flex-direction: column;
-			gap: 1rem;
+		&-links {
+			display: flex;
+			flex-direction: row;
+			gap: 3rem;
+		}
+
+		&-links > * {
+			transition: text-decoration 0.3s;
+		}
+
+		&-links > *:hover {
+			text-decoration: underline;
+		}
+
+		@include mixins.breakpoint(sm) {
+			.contact__footer-links {
+				flex-direction: column;
+				gap: 1rem;
+			}
 		}
 	}
 }

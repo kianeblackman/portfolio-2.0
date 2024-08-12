@@ -7,7 +7,7 @@
 	<div class="hero__content container--section">
 		<h1 class="hero__heading fw-regular">
 			<div class="bold">Kiane Blackman</div>
-			🡢 a curious and creative
+			<div class="hero_heading-arrow">🡢</div> a curious and creative
 			<div class="hero__underline-wrapper">
 				web developer
 				<div class="hero__underline" style="--underline-url: url('/images/wavey-underline.svg');"></div>

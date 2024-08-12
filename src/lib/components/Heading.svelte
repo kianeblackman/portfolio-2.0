@@ -1,11 +1,11 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { Anchor, HomeSticker } from '$lib';
+	import { Anchor } from '$lib';
 
-	export let heading: string;
+	export let heading: string = 'Kiane Blackman';
 	export let anchorHeading: string | null = null;
-	export let customClass: string = '';
-	export let url: string = '';
+	export let customClass: string = '--dark';
+	export let url: string = '/';
 
 	onMount(() => {
 		if (!heading) {
@@ -21,7 +21,7 @@
 </script>
 
 <div class={`heading ${customClass}`}>
-	<div class="container flex align-center space-between">
+	<div class="heading__content container">
 		<h2>{heading}</h2>
 		{#if anchorHeading}
 			<h3>

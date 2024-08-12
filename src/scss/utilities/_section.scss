@@ -1,4 +1,16 @@
 .section {
-	padding-top: 3.6rem;
-	padding-bottom: 1rem;
+	padding: clamp(1rem, 5%, 3rem);
+
+	&--contact {
+		padding-top: 3.6rem;
+		padding-bottom: 1rem;
+	}
+
+	&--hero {
+	}
+}
+
+.section--hero {
+	// padding-top: 3.6rem;
+	// padding-bottom: 3.6rem;
 }

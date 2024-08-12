@@ -1,0 +1,83 @@
+@use '../abstracts/tokens' as tokens;
+@use '../abstracts/mixins' as mixins;
+
+.about {
+	&__content {
+		display: flex;
+		flex-direction: row;
+		gap: 1.6rem;
+
+		@include mixins.breakpoint(md) {
+			flex-direction: column;
+		}
+	}
+
+	&__main {
+		display: flex;
+		flex-direction: column;
+		gap: 1.6rem;
+	}
+
+	&__additional {
+		display: flex;
+		flex-direction: row;
+		gap: 1.6rem;
+
+		@include mixins.breakpoint(md) {
+			flex-direction: column;
+		}
+	}
+
+	&__card {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 1.6rem;
+		padding: 1.6rem;
+		border-radius: 0.8rem;
+
+		&--position {
+			background-color: #d1d1d1;
+		}
+
+		&--contact {
+			background-color: transparent;
+			border: 2px solid #d1d1d1;
+		}
+	}
+
+	&__techstack {
+		display: flex;
+		flex-direction: column;
+		gap: 1.6rem;
+
+		&-category {
+			display: flex;
+			flex-direction: column;
+			gap: 0.6rem;
+		}
+
+		&-list {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 1rem;
+
+			@include mixins.breakpoint(sm) {
+				gap: 0.6rem;
+			}
+		}
+
+		&-sticker {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: row;
+			gap: 0.4rem;
+			font-size: 1rem;
+			background-color: transparent;
+			padding: 0.4rem 0.6rem;
+			border: 1px solid black;
+			border-radius: 12rem;
+		}
+	}
+}

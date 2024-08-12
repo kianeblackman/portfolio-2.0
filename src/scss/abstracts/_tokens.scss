@@ -1,3 +1,5 @@
+@use './colors' as *;
+
 /*
 Font Family
 ***********
@@ -34,10 +36,16 @@ Colors
 ********
 */
 
-$clr-primary-black: #000000;
+$clr-site: #e5e7eb;
+$clr-site-dark: #333333;
 
+$clr-primary-black: #000000;
+$clr-primary-white: #f9fafb;
+
+$clr-accent-cream: fff3cd;
 $clr-accent-green: #cbee4c;
 $clr-accent-orange: #f2c94c;
+$clr-accent-purple: #a483d0;
 
 /*
 Line Heights

@@ -1,24 +1,37 @@
 @use '../abstracts/tokens' as tokens;
 
 .heading {
+	position: sticky;
+	top: 0;
+	z-index: 1000;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 	min-height: 4.2rem;
-}
 
-.heading--light {
-	background-color: #ffffff;
-	color: tokens.$clr-primary-black;
-}
+	&--light {
+		background-color: #ffffff;
+		color: tokens.$clr-primary-black;
+	}
 
-.heading--dark {
-	background-color: tokens.$clr-primary-black;
-	color: #ffffff;
-}
+	&--dark {
+		background-color: tokens.$clr-primary-black;
+		color: #ffffff;
+	}
 
-.heading--orange {
-	background-color: tokens.$clr-accent-orange;
-	color: tokens.$clr-primary-black;
+	&--orange {
+		background-color: tokens.$clr-accent-orange;
+		color: tokens.$clr-primary-black;
+	}
+
+	&--green {
+		background-color: tokens.$clr-accent-green;
+		color: tokens.$clr-primary-black;
+	}
+
+	&--purple {
+		background-color: tokens.$clr-accent-purple;
+		color: tokens.$clr-primary-black;
+	}
 }

@@ -13,9 +13,4 @@
 	});
 </script>
 
-<button
-	class={`heading ${customClass ? customClass : ''}`}
-	on:click|preventDefault={onClick ? onClick : undefined}
->
-	{text}
-</button>
+<button class={`heading ${customClass ? customClass : ''}`} on:click|preventDefault={onClick ? onClick : undefined}>{text}</button>

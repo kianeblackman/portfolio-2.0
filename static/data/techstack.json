@@ -1,0 +1,24 @@
+{
+	"hardStack": [
+		{ "name": "HTML", "icon": "akar-icons:html-fill" },
+		{ "name": "CSS", "icon": "akar-icons:css-fill" },
+		{ "name": "JavaScript", "icon": "akar-icons:javascript-fill" },
+		{ "name": "TypeScript", "icon": "akar-icons:typescript-fill" },
+		{ "name": "React", "icon": "akar-icons:react-fill" },
+		{ "name": "SASS", "icon": "akar-icons:sass-fill" },
+		{ "name": "Node.js", "icon": "akar-icons:node-fill" },
+		{ "name": "Vite", "icon": "file-icons:vite" },
+		{ "name": "Tailwind CSS", "icon": "mdi:tailwind" },
+		{ "name": "Git", "icon": "akar-icons:github-fill" },
+		{ "name": "Figma", "icon": "akar-icons:figma-fill" },
+		{ "name": "Photoshop", "icon": "cib:adobe-photoshop" },
+		{ "name": "Illustrator", "icon": "cib:adobe-illustrator" },
+		{ "name": "InDesign", "icon": "cib:adobe-indesign" },
+		{ "name": "Lightroom", "icon": "cib:adobe-lightroom" }
+	],
+	"learningStack": [
+		{ "name": "GSAP", "icon": "simple-icons:greensock" },
+		{ "name": "Sveltekit", "icon": "ri:svelte-fill" },
+		{ "name": "Docker", "icon": "mdi:docker" }
+	]
+}

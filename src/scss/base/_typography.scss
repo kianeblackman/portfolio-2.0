@@ -29,9 +29,22 @@ h2 {
 
 h3 {
 	font-size: $fs-md;
-	font-weight: $fw-md;
+	font-weight: $fw-sm;
+}
+
+h4 {
+	font-size: $fs-sm;
+	font-weight: $fw-sm;
 }
 
 p {
-	font-size: 1rem;
+	font-size: $fs-xs;
+}
+
+a {
+	font-size: $fs-sm;
+}
+
+.uppercase {
+	text-transform: uppercase;
 }

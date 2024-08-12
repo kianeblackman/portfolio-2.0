@@ -40,13 +40,12 @@
 	</div>
 	<div class="project-card__content">
 		<div class="project-card__details">
-			<h2 class="project-card__title">{projectTitle}</h2>
-			<p class="project-card__description">{projectDescription}</p>
+			<h1 class="project-card__title">{projectTitle}</h1>
+			<h4 class="project-card__description">{projectDescription}</h4>
 		</div>
 		<div class="project-card__links">
-			<a href={projectLink}>View Site</a>
-			<a href={projectGithub}>View Code</a>
+			<a href={projectLink} class="button">View Site</a>
+			<a href={projectGithub} class="button">View Code</a>
 		</div>
 	</div>
 </div>
- 

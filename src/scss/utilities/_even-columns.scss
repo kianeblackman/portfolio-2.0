@@ -3,13 +3,12 @@
 .even-columns {
 	display: flex;
 	flex-direction: row;
-	align-items: center;
 
 	> * {
 		flex: 1;
 	}
 
-	@include mixins.breakpoint(sm) {
+	@include mixins.breakpoint(md) {
 		flex-direction: column;
 	}
 }

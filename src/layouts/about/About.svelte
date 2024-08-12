@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Heading from '../lib/components/Heading.svelte';
+	import { Heading } from '$lib';
 	import Icon from '@iconify/svelte';
 
 	import { onMount } from 'svelte';
@@ -28,9 +28,8 @@
 		<div class="about__main">
 			<h1>Hello there!</h1>
 			<h2 class="about__introduction fw-regular">
-				My name is Kiane Blackman. I'm a creative web developer based in the South of England with
-				an eye for design! Aside from creating digital stuff I like gardening, cooking, swimming and
-				many more outdoor activities.
+				My name is Kiane Blackman. I'm a creative web developer based in the South of England with an eye for design! Aside from creating digital stuff I like gardening, cooking, swimming and many
+				more outdoor activities.
 			</h2>
 			<div class="about__additional">
 				<div class="about__card about__card--position">

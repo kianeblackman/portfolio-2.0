@@ -26,7 +26,7 @@
 
 <section id="contact" class="contact">
 	<Heading customClass="heading--dark" heading="Contact" anchorHeading="Back to top" url="#hero" />
-	<div class="contact__content container section--contact">
+	<div class="contact__content container--contact">
 		<div class="contact__main">
 			<h2 class="fw-light">Say hello!</h2>
 			<h1 class="fw-regular">INTERESTED IN A NEW PROJECT?</h1>

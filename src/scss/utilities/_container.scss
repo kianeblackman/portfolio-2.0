@@ -10,4 +10,8 @@
 		padding: clamp(1rem, 5%, 3rem) clamp(1rem, 5%, 5rem);
 		box-sizing: border-box;
 	}
+
+	&--contact {
+		padding: clamp(1rem, 5%, 3rem) clamp(1rem, 5%, 5rem) 1rem clamp(1rem, 5%, 5rem);
+	}
 }

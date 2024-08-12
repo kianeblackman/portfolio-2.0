@@ -34,4 +34,4 @@
 	});
 </script>
 
-<a href={url} on:click={scrollToSection}>{anchorHeading}</a>
+<a href={url} on:click={scrollToSection} class="anchor">{anchorHeading}</a>

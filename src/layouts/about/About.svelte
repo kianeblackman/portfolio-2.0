@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { Heading } from '$lib';
 	import Icon from '@iconify/svelte';
-
 	import { onMount } from 'svelte';
 
 	type TechItem = {
@@ -10,14 +9,12 @@
 	};
 
 	let hardStack: TechItem[] = [];
-	let softStack: TechItem[] = [];
 	let learningStack: TechItem[] = [];
 
 	onMount(async () => {
 		const response = await fetch('/data/techstack.json');
 		const data = await response.json();
 		hardStack = data.hardStack;
-		softStack = data.softStack;
 		learningStack = data.learningStack;
 	});
 </script>
@@ -53,7 +50,7 @@
 				<div class="about__card about__card--contact">
 					<div class="about__card-item">
 						<h6>Email</h6>
-						<p>hello@gimaev.com</p>
+						<p>hi@kianeblackman.com</p>
 					</div>
 					<div class="about__card-item">
 						<h6>Location</h6>

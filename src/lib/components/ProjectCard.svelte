@@ -18,13 +18,7 @@
 	export let projectGithub: ProjectProps['projectGithub'];
 
 	onMount(() => {
-		const requiredProps: (keyof ProjectProps)[] = [
-			'projectTitle',
-			'projectDescription',
-			'projectLink',
-			'projectImage',
-			'projectGithub'
-		];
+		const requiredProps: (keyof ProjectProps)[] = ['projectTitle', 'projectDescription', 'projectLink', 'projectImage', 'projectGithub'];
 		requiredProps.forEach((prop) => {
 			if (!eval(prop)) {
 				console.error(new Error(`${prop} is required`));
@@ -44,8 +38,8 @@
 			<h4 class="project-card__description">{projectDescription}</h4>
 		</div>
 		<div class="project-card__links">
-			<a href={projectLink} class="button">View Site</a>
-			<a href={projectGithub} class="button">View Code</a>
+			<a href={projectLink} class="button" target="_blank" rel="noopener noreferrer">View Site</a>
+			<a href={projectGithub} class="button" target="_blank" rel="noopener noreferrer">View Code</a>
 		</div>
 	</div>
 </div>

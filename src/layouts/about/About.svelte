@@ -1,22 +1,10 @@
 <script lang="ts">
 	import { Heading } from '$lib/components';
+	import { techStack } from '$lib/data';
 	import Icon from '@iconify/svelte';
-	import { onMount } from 'svelte';
 
-	type TechItem = {
-		name: string;
-		icon: string;
-	};
-
-	let hardStack: TechItem[] = [];
-	let learningStack: TechItem[] = [];
-
-	onMount(async () => {
-		const response = await fetch('/data/techstack.json');
-		const data = await response.json();
-		hardStack = data.hardStack;
-		learningStack = data.learningStack;
-	});
+	let hardStack = techStack.hardStack;
+	let learningStack = techStack.learningStack;
 </script>
 
 <section id="about" class="about">

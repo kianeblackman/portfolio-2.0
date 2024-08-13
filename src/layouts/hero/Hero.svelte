@@ -15,8 +15,8 @@
 	<div class="hero__content container--section">
 		<h1 class="hero__heading fw-regular">
 			<div class="bold">Kiane Blackman</div>
-			<div class="hero_heading-star">
-				<img src={graphicStar} alt="Hero Graphic" />
+			<div class="hero__heading-star">
+				<img src={graphicStar} alt="Graphic Star" />
 			</div>
 			a curious and creative
 			<div class="hero__underline-wrapper">

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '../scss/styles.css';
-	import {HomeSticker} from '$lib';
+	import { HomeSticker } from '$lib/components';
 </script>
 
 <main>

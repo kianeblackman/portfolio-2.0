@@ -1,13 +1,23 @@
 <script lang="ts">
-	import { Heading } from '$lib';
+	import { Heading } from '$lib/components';
+	import { graphicStar } from '$lib/images';
+
+	const heading = {
+		heading: 'Home',
+		anchorHeading: 'Contact',
+		url: '#contact',
+		customClass: 'heading--green'
+	};
 </script>
 
 <section id="hero" class="hero">
-	<Heading customClass="heading--green" heading="Home" anchorHeading="Contact" url="#contact" />
+	<Heading {...heading} />
 	<div class="hero__content container--section">
 		<h1 class="hero__heading fw-regular">
 			<div class="bold">Kiane Blackman</div>
-			<div class="hero_heading-star"><img src="/images/graphic-star.svg" alt="Hero Graphic" /></div>
+			<div class="hero__heading-star">
+				<img src={graphicStar} alt="Graphic Star" />
+			</div>
 			a curious and creative
 			<div class="hero__underline-wrapper">
 				web developer
@@ -18,8 +28,5 @@
 				<h3 class="fw-regular">PORTFOLIO 2024</h3>
 			</div>
 		</h1>
-		<!-- <div class="hero__image">
-			<img src="/images/image.svg" alt="Hero Graphic" />
-		</div> -->
 	</div>
 </section>

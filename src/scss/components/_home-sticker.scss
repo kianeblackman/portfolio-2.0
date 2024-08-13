@@ -1,15 +1,15 @@
 .home-sticker {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	position: fixed;
 	z-index: 2000;
-	min-height: 4.2rem;
-	width: 100%;
+	top: 0;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	height: 4.6rem;
 	pointer-events: none;
 
 	img {
+		height: clamp(1.6rem, 10vw, 3rem);
 		width: clamp(1.6rem, 10vw, 3rem);
-		height: auto;
 	}
 }

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { gsap } from 'gsap';
+	import { graphicFlower } from '$lib/images';
 
 	onMount(async () => {
 		try {
@@ -22,6 +23,6 @@
 	});
 </script>
 
-<div class="home-sticker">
-	<img class="scroll" src="/images/navbar-icon.svg" alt="" />
+<div class="home-sticker container">
+	<img class="scroll" src={graphicFlower} alt="" />
 </div>

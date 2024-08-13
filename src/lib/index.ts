@@ -14,4 +14,8 @@ UTILITIES
 
 import copyToClipboard from './utilities/copyToClipboard';
 
+/*
+IMAGES
+*/
+
 export { Anchor, Button, Heading, ProjectCard, copyToClipboard, HomeSticker };

@@ -32,6 +32,22 @@
 		padding: 3rem;
 	}
 
+	&__details {
+		display: flex;
+		flex-direction: column;
+		gap: 0.6rem;
+	}
+
+	&__techstack-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+
+		@include mixins.breakpoint(sm) {
+			gap: 0.6rem;
+		}
+	}
+
 	&__links {
 		display: flex;
 		gap: 1.6rem;

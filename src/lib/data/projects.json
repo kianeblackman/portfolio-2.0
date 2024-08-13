@@ -5,7 +5,14 @@
 		"projectLink": "https://roamfolk.com/",
 		"projectImage": "/images/roam-cover.jpg",
 		"projectImageAlt": "Roam Folk Cover",
-		"projectGithub": "https://github.com/kianeblackman/ROAM_website"
+		"projectGithub": "https://github.com/kianeblackman/ROAM_website",
+		"projectTech": [
+			{ "name": "Javascript", "icon": "akar-icons:javascript-fill" },
+			{ "name": "React", "icon": "akar-icons:react-fill" },
+			{ "name": "SCSS", "icon": "akar-icons:sass-fill" },
+			{ "name": "Vite", "icon": "file-icons:vite" },
+			{ "name": "Netlify", "icon": "file-icons:netlify" }
+		]
 	},
 	{
 		"projectTitle": "Pizza Shark",
@@ -13,7 +20,14 @@
 		"projectLink": "https://pizza-shark.netlify.app/",
 		"projectImage": "/images/pizzashark-cover.jpg",
 		"projectImageAlt": "Pizza Shark Cover",
-		"projectGithub": "https://github.com/kianeblackman/pizza-shark"
+		"projectGithub": "https://github.com/kianeblackman/pizza-shark",
+		"projectTech": [
+			{ "name": "Javascript", "icon": "akar-icons:javascript-fill" },
+			{ "name": "React", "icon": "akar-icons:react-fill" },
+			{ "name": "SCSS", "icon": "akar-icons:sass-fill" },
+			{ "name": "Vite", "icon": "file-icons:vite" },
+			{ "name": "Netlify", "icon": "file-icons:netlify" }
+		]
 	},
 	{
 		"projectTitle": "Portfolio 2.0",
@@ -21,6 +35,14 @@
 		"projectLink": "/",
 		"projectImage": "/images/image.svg",
 		"projectImageAlt": "Portfolio Cover",
-		"projectGithub": "https://github.com/kianeblackman/portfolio-2.0"
+		"projectGithub": "https://github.com/kianeblackman/portfolio-2.0",
+		"projectTech": [
+			{ "name": "Typescript", "icon": "akar-icons:typescript-fill" },
+			{ "name": "SCSS", "icon": "akar-icons:sass-fill" },
+			{ "name": "Sveltekit", "icon": "ri:svelte-fill" },
+			{ "name": "GSAP", "icon": "simple-icons:greensock" },
+			{ "name": "Vite", "icon": "file-icons:vite" },
+			{ "name": "Vercel", "icon": "akar-icons:vercel-fill" }
+		]
 	}
 ]

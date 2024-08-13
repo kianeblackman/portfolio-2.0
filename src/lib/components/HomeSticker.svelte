@@ -23,6 +23,6 @@
 	});
 </script>
 
-<div class="home-sticker">
+<div class="home-sticker container">
 	<img class="scroll" src={graphicFlower} alt="" />
 </div>

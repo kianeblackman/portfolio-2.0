@@ -1,38 +1,29 @@
-# create-svelte
+# 🚀 Portfolio Website
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+### Hello, I'm Kiane Blackman. I’m a developer, designer, filmmaker and all around a pretty creative fellah. Welcome to my portfolio. Grab a drink or a snack, take your time and enjoy!
 
-## Creating a project
+## 👨🏾‍💻 Tech Stack
 
-If you're seeing this, you've probably already done this step. Congrats!
+[![scss](https://img.shields.io/badge/sass-B95D88?style=for-the-badge&logo=sass&logoColor=white)](https://sass-lang.com/)
+[![typescript](https://img.shields.io/badge/typescript-2F74C0?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![svelte](https://img.shields.io/badge/svelte-F93D00?style=for-the-badge&logo=svelte&logoColor=white)](https://svelte.dev/)
+[![gsap](https://img.shields.io/badge/gsap-87CA06?style=for-the-badge&logo=greensock&logoColor=white)](https://greensock.com/gsap/)
+[![vite](https://img.shields.io/badge/vite-827FFD?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![vercel](https://img.shields.io/badge/vercel-161616?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## ✨ Features
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+- **Modern Responsive Layout**: Fully responsive design that utilises as little breakpoints as possable.
+- **BEM CSS Methodology**: Utilises the BEM (Block Element Modifier) methodology for clean and maintainable CSS.
+- **Organised SCSS File System**: Well-organized SCSS file system based on my [SCSS template](https://github.com/kianeblackman/scss-template).
+- **Smooth Animations**: Enhanced with GSAP for smooth and engaging animations.
+- **Fast Performance**: Built with Vite for a fast and optimised development experience.
+- **Easy Deployment**: Hosted on Vercel for seamless deployment and scalability.
 
-## Developing
+## 💬 Feedback
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+If you have any feedback, please reach out to me at hi@kianeblackman.com
 
-```bash
-npm run dev
+## 📝 License
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Distributed under the MIT License. See LICENSE for more information.

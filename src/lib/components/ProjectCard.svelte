@@ -1,31 +1,13 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import Icon from '@iconify/svelte';
 
-	type ProjectProps = {
-		projectTitle: string;
-		projectDescription: string;
-		projectLink: string;
-		projectImage: string;
-		projectImageAlt: string;
-		projectGithub: string;
-	};
-
-	export let projectTitle: ProjectProps['projectTitle'];
-	export let projectDescription: ProjectProps['projectDescription'];
-	export let projectLink: ProjectProps['projectLink'];
-	export let projectImage: ProjectProps['projectImage'];
-	export let projectImageAlt: ProjectProps['projectImageAlt'];
-	export let projectGithub: ProjectProps['projectGithub'];
-
-	onMount(() => {
-		const requiredProps: (keyof ProjectProps)[] = ['projectTitle', 'projectDescription', 'projectLink', 'projectImage', 'projectGithub'];
-		requiredProps.forEach((prop) => {
-			if (!eval(prop)) {
-				console.error(new Error(`${prop} is required`));
-				throw new Error(`${prop} is required`);
-			}
-		});
-	});
+	export let projectTitle: string;
+	export let projectDescription: string;
+	export let projectImage: string;
+	export let projectImageAlt: string;
+	export let projectLink: string;
+	export let projectGithub: string;
+	export let projectTech: Array<{ name: string; icon: string }>;
 </script>
 
 <div class="project-card">
@@ -36,6 +18,14 @@
 		<div class="project-card__details">
 			<h2 class="project-card__title bold">{projectTitle}</h2>
 			<h4 class="project-card__description">{projectDescription}</h4>
+			<ul class="project-card__techstack-list">
+				{#each projectTech as tech}
+					<li class="tech-sticker">
+						<Icon icon={tech.icon} style="color: black;" />
+						{tech.name}
+					</li>
+				{/each}
+			</ul>
 		</div>
 		<div class="project-card__links">
 			<a href={projectLink} class="button" target="_blank" rel="noopener noreferrer">View Site</a>

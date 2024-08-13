@@ -6,6 +6,26 @@
 	import 'tippy.js/dist/tippy.css';
 	import 'tippy.js/themes/light.css';
 
+	const contactHeading = {
+		heading: 'Contact',
+		anchorHeading: 'Back to Top',
+		url: '#hero',
+		customClass: 'heading--dark'
+	};
+
+	const aboutLinks = {
+		anchorHeading: 'About',
+		url: '#about'
+	};
+
+	const projectsLinks = {
+		anchorHeading: 'Projects',
+		url: '#projects'
+	};
+
+	const githubLink = 'https://github.com/kianeblackman';
+	const email = 'hi@kianeblackman';
+
 	onMount(() => {
 		tippy('#copyButton', {
 			content: '<h2>Woo-hoo!!!</h2>',
@@ -26,19 +46,19 @@
 </script>
 
 <section id="contact" class="contact">
-	<Heading customClass="heading--dark" heading="Contact" anchorHeading="Back to top" url="#hero" />
+	<Heading {...contactHeading} />
 	<div class="contact__content container--contact">
 		<div class="contact__main">
 			<h2 class="fw-light">Say hello!</h2>
 			<h1 class="fw-regular">INTERESTED IN A NEW PROJECT?</h1>
-			<button id="copyButton" class="button--dark" on:click={() => copyToClipboard('hi@kianeblackman.com')}>Copy My Email</button>
+			<button id="copyButton" class="button--dark" on:click={() => copyToClipboard(email)}>Copy My Email</button>
 		</div>
 		<div class="contact__footer">
 			<hr />
 			<div class="contact__footer-links">
-				<Anchor anchorHeading="About" url="#about" />
-				<Anchor anchorHeading="Projects" url="#projects" />
-				<a href="https://github.com/kianeblackman" target="_blank" rel="noopener noreferrer">Github</a>
+				<Anchor {...aboutLinks} />
+				<Anchor {...projectsLinks} />
+				<a href={githubLink} target="_blank" rel="noopener noreferrer">Github</a>
 			</div>
 			<hr />
 			<p>© 2024 by Kiane Blackman</p>

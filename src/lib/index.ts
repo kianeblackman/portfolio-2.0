@@ -18,6 +18,4 @@ import copyToClipboard from './utilities/copyToClipboard';
 IMAGES
 */
 
-export * from './images';
-
 export { Anchor, Button, Heading, ProjectCard, copyToClipboard, HomeSticker };

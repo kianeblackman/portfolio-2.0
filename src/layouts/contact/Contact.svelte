@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { Anchor, Heading, copyToClipboard } from '$lib';
+	import { Anchor, Heading } from '$lib/components';
+	import { copyToClipboard } from '$lib/utilities';
 	import { onMount } from 'svelte';
 	import tippy, { followCursor } from 'tippy.js';
 	import 'tippy.js/dist/tippy.css';

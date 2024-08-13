@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Heading, ProjectCard } from '$lib';
+	import { Heading, ProjectCard } from '$lib/components';
 
 	import { onMount } from 'svelte';
 

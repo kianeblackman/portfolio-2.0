@@ -1,1 +1,4 @@
-export { default as navbarIcon } from './svg/navbar-icon.svg';
+import graphicFlower from './svg/graphic-flower.svg';
+import graphicStar from './svg/graphic-star.svg';
+
+export { graphicFlower, graphicStar };

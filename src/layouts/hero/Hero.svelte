@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { Heading } from '$lib';
+	import { Heading } from '$lib/components';
+	import { graphicStar } from '$lib/images';
 
 	const heading = {
 		heading: 'Home',
@@ -15,7 +16,7 @@
 		<h1 class="hero__heading fw-regular">
 			<div class="bold">Kiane Blackman</div>
 			<div class="hero_heading-star">
-				<img src="/images/graphic-star.svg" alt="Hero Graphic" />
+				<img src={graphicStar} alt="Hero Graphic" />
 			</div>
 			a curious and creative
 			<div class="hero__underline-wrapper">

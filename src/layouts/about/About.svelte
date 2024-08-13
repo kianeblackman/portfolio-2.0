@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Heading } from '$lib';
+	import { Heading } from '$lib/components';
 	import Icon from '@iconify/svelte';
 	import { onMount } from 'svelte';
 

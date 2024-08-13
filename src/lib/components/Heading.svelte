@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { Anchor } from '$lib';
+	import { Anchor } from '$lib/components';
 
 	export let heading: string = 'Kiane Blackman';
 	export let anchorHeading: string | null = null;
